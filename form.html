@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 m-auto d-block">
+<h1 class="text-success text-center my-3">Registration form</h1>
+<form action="#" onsubmit="return validation()" class="bg-light">
+    <div class="reg-form">
+        <label>username</label>
+        <input type="text" name="user" id="user" class="form-control" autocomplete="off">
+        <span id="username" class="text-danger font-weight-bold"></span><br>
+       
+        <label>password</label>
+        <input type="text" name="password" id="password" class="form-control" autocomplete="off">
+        <label>confirm password</label>
+        <input type="text" name="con-pass" id="con-pass" class="form-control" autocomplete="off">
+        <label>Mobile number:</label>
+        <input type="text" name="mob-num" id="mob-num" class="form-control" autocomplete="off">
+        <label>Email:</label>
+        <input type="email" name="email" id="email" class="form-control" autocomplete="off">
+        <input type="submit" name="submit" value="submit" class="btn btn-success my-2">
+    </div>
+
+</form>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="form.js"></script>
+</html>
