@@ -1,0 +1,15 @@
+/* body{
+    background-color: cyan;
+} */
+h2{
+    margin-top: 20px;
+}
+h3{
+    background-color: deeppink;
+    margin: 10px;
+    padding: 5px;
+}
+p{
+    font-size: 20px;
+    font-family: sans-serif;
+}
