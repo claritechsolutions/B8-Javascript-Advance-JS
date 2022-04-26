@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>switch statement</h3>
+    <h1 id="header">sanubar</h1>
+    <input type="text" id="inp">
+    <button onclick="pressed()">click me</button>
+
+
+    <script>
+        function pressed(){
+            var text = document.getElementById("inp").value;
+            switch (text){
+                case "red":
+                document.getElementById("header").style.color="red";
+                break;
+
+                case "blue":
+                document.getElementById("header").style.color="blue";
+                break;
+
+                case "yellow":
+                document.getElementById("header").style.color="yellow";
+                break;
+
+                default:
+                document.getElementById("header").style.color="black";
+                    break;
+            }
+           
+        }
+    </script>
+</body>
+</html>

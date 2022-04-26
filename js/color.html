@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>if else if else statement</h3>
+    <h1 id="header">sanubar</h1>
+    <input type="text" id="inp">
+    <button onclick="pressed()">click me</button>
+
+
+    <script>
+        function pressed(){
+            var text = document.getElementById("inp").value;
+
+            if(text === "red")
+            {
+                document.getElementById("header").style.color = "red";
+            }
+            else if(text === "green")
+            {
+                document.getElementById("header").style.color = "green";
+            }
+            else if(text === "blue")
+            {
+                document.getElementById("header").style.color = "blue";
+            }
+            else{
+                document.getElementById("header").style.color = "black";
+            }
+        }
+    </script>
+</body>
+</html>

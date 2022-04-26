@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>if else statement</h3>
+    <label>enter number</label><br>
+    <input type="number" id="oddeven" onkeyup="ischeck()">
+    <span id="showmsg"></span>
+
+
+
+    <script>
+        function ischeck(){
+         var num = document.getElementById("oddeven").value;
+        // alert(num);
+         if((num % 2) === 0){
+             document.getElementById("showmsg").innerHTML = "the number" + num +"is an even number";        
+         }
+        else{
+            document.getElementById("showmsg").innerHTML = "the number" + num +"is odd number";   
+        }
+     }
+     </script>
+</body>
+
+</html>
