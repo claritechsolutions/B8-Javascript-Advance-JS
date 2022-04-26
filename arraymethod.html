@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container bg-dark border rounded-2 p-5">
+    <p class="bg-primary text-white" id="p1"></p><hr>
+    <p class="bg-primary text-white" id="p2"></p><hr>
+    <p class="bg-primary text-white" id="p3"></p><hr>
+    <p class="bg-primary text-white" id="p4"></p><hr>
+    <p class="bg-primary text-white" id="p6"></p>
+    <p class="bg-primary text-white" id="p7"></p>
+    </div>
+    <script>
+        let fruits=["mango","orange","banana","apple","kiwi"];
+        document.getElementById('p1').innerHTML="Array ====>"+fruits;
+        let start= -2;
+        let end=2;
+        let removeIteam=fruits.splice(start, end,"greps","watermelon");
+        document.getElementById('p2').innerHTML="remove Array Iteams===>" +removeIteam;
+        document.getElementById('p3').innerHTML="Array ===>"+fruits;
+
+        for(const fr of fruits)
+        {
+            document.getElementById('p4').innerHTML=" Iterate Array ==>" +fr;
+        }
+
+
+        const copyfruits=[...fruits];
+        document.getElementById('p6').innerHTML=" Orignal Array:="+fruits;
+        document.getElementById('p7').innerHTML="Array Copy:="+copyfruits;
+    </script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
+
+
+
