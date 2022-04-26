@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Array_methods.css">
+</head>
+<body>
+    <h1>Javascript Array Methods</h1>
+    <h3>Converting Arrays to Strings</h3>
+    <h4>The toString() method returns an array as a comma separated string:</h4>
+    <p id="string"></p>
+    <h3>Using join function</h3>
+    <h4>The join() method joins array elements into a string with specing</h4>
+    <p id="join"></p>
+    <h3>Access an Array item by its index</h3>
+    <h4>JavaScript array elements are accessed using numeric indexes (starting from 0).</h4>
+    <p id="access"></p>
+    <h3>Length Function</h3>
+    <h4>The length property returns the length of an array.</h4>
+    <p id="length"></p>
+    <h3>Finding index of an item in an array(Mango)</h3>
+    <p id="finding_index"></p>
+    <h3>PUSH Function</h3>
+    <h4>push adds new items to the end of an array</h4>
+    <p id="push"></p>
+    <h3>POP Function</h3>
+    <h4>pop removes the last element of an array.</h4>
+    <p id="pop"></p>
+    <h3>SPLICE Function</h3>
+    <h4>The Array.splice() method adds array elements </h4>
+    <p id="splice"></p>
+    <h3>Shift Function</h3>
+    <h4>shift removes the first item of an array </h4>
+    <p id="shift"></p>
+    <h3>Unshift Function</h3>
+    <h4>unshift adds new items to the beginning of an array </h4>
+    <p id="unshift"></p>
+    <h3>Remove multiple items from the beginning</h3>
+    <p id="splice1"></p>
+
+    <script>
+        const fruits =["Apple", "Banana", "Mango", "Orange", "watermelon"];
+        const fruits1 = new Array("Apple", "Banana", "Mango", "Orange", "watermelon");
+        //document.write(fruits);
+        document.getElementById("string").innerHTML = fruits.toString();
+        document.getElementById("join").innerHTML = fruits.join('*');
+        document.getElementById("access").innerHTML = fruits[2];
+        document.getElementById("length").innerHTML = fruits.length;
+        //document.getElementById("length").innerHTML = fruits.length-1;
+        //document.getElementById("length").innerHTML = fruits[fruits.length-1];
+        document.getElementById("finding_index").innerHTML = fruits.indexOf("Mango");
+        //document.getElementById("finding_index").innerHTML = fruits.includes("Orange",3);
+        fruits.push("Cherry");
+        document.getElementById("push").innerHTML = fruits;
+        fruits.pop();
+        document.getElementById("pop").innerHTML = fruits;
+        fruits.splice(2,0,"kiwi","muskmelon");
+        document.getElementById("splice").innerHTML = fruits;
+        //document.getElementById("splice").innerHTML = fruits.splice(-2);
+        //document.getElementById("splice").innerHTML = fruits.splice(2);
+        fruits.shift();
+        document.getElementById("shift").innerHTML = fruits;
+        fruits.unshift("Rasberry");
+        document.getElementById("unshift").innerHTML = fruits;
+        const startElement=0;
+        const deletecount=2;
+        fruits.splice(startElement,deletecount)
+        document.getElementById("splice1").innerHTML = fruits;
+
+        
+
+        
+//console.log(fruits);
+//console.log(fruits1);
+//console.log(fruits. toString());
+//console.log(fruits. join(' , '));
+</script>
+</body>
+</html>

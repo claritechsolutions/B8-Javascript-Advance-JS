@@ -1,0 +1,15 @@
+h1,h3,p,h4{
+text-align: center;
+}
+script{
+    text-align: center;
+}
+h1{
+    color: red;
+}
+h3{
+    color: blue;
+}
+p{
+    color:rgb(161, 12, 12);
+}
