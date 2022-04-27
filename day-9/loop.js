@@ -22,6 +22,42 @@ do{
 }while(q>=1)
 
 
+let counter=1;
+let sum=0;
+while(counter <=100){
+  if(counter % 2==0){
+    sum=sum+counter;
+  }
+   counter++;
+}
+console.log("sum of 1 to 100 even numbers===>" +sum);
+
+console.log("....using continue........")
+for(let r=0;r<=10;r++){
+  if(r===2 || r===5){
+    continue;
+  }
+  console.log(r);
+}
+
+console.log("....using break........")
+for(let r=0;r<=10;r++){
+  if( r===5){
+   break ;
+  }
+  console.log(r);
+}
+
+console.log("....nested loop........")
+for(let y=1;y<10;y++){
+console.log(y);
+for(z=1;z<3;z++){
+  console.log('number'+z);
+}
+}
+
+
+
 console.log(".....................")
 let a =['','','',''];
 console.log("Length of Array="+a.length);
