@@ -15,6 +15,12 @@ do {
   console.log(p);
 } while (p<=5)
 
+let q=10;
+do{
+  console.log(q);
+  q--;
+}while(q>=1)
+
 
 console.log(".....................")
 let a =['','','',''];
