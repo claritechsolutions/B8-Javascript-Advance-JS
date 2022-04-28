@@ -1,4 +1,4 @@
-const arr = ['bread', 'toast', 'sandwitch', 'cookies'];
+// const arr = ['bread', 'toast', 'sandwitch', 'cookies'];
 
 //**remove single item by index
 
@@ -56,7 +56,7 @@ const arr = ['bread', 'toast', 'sandwitch', 'cookies'];
 
 // **Copy an array with deep copy
 
-const deepcopy = JSON.parse(JSON.stringify(arr));
-console.log("Copy of array is:", deepcopy);
-deepcopy.splice(2, 0, 'abc', 'vcf');
-console.log("spliced array is:", deepcopy);
+// const deepcopy = JSON.parse(JSON.stringify(arr));
+// console.log("Copy of array is:", deepcopy);
+// deepcopy.splice(2, 0, 'abc', 'vcf');
+// console.log("spliced array is:", deepcopy);
