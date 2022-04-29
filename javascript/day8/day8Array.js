@@ -29,7 +29,18 @@
 //     console.log("items is:", arr1);
 // }
 
-//forEach()
+// const developerPositions = ['react', 'ios', 'php', 'backend', 'ui'];
+// developerPositions.forEach((deve) => {
+//     if (deve === 'backend' || deve === 'ui') {
+//         console.log(deve);
+//     }
+// });
+// const belowValue = (currentValue) => currentValue < 45;
+// let values = [1, 5, 10, 45, 60, 100];
+// console.log(values.every(belowValue));
+
+
+//***forEach()
 
 // arr.forEach((arr1, i) => {
 //     if (i < arr.length) {
