@@ -45,7 +45,11 @@ function checkAge1(a)
    return a >= 18;
 
 } 
+
+
+
 let list=[2,4,9,7,1,5,11,45,78,62];
+
 let l=list.filter(checkList)
 console.log(l);
 function checkList(num)
