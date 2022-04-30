@@ -135,3 +135,12 @@ console.log("developerPositions1 -->", developerPositions1)
 console.log(data);
 console.log(page);
 console.log(details);
+
+
+console.log("--------------------------------------");
+//map use
+const names = ['irish', 'daisy', 'anna'];
+const uppercase= names.map(names=>names.toUpperCase());
+{
+  console.log(uppercase);
+}
