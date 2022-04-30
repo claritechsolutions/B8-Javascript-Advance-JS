@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const developerPositions = [10, 20, 30];
+        document.write(developerPositions[1]);
+        developerPositions.forEach((apply, index) => {
+
+            console.log(apply + "---->" + index);
+
+        })
+        // /**
+        //  * Every()
+        //  */
+        var age = [10, 18, 20, 25, 30];
+        document.write(age);
+        var b = age.every(function checkadult(age) {
+            return age >= 18
+        })
+        document.write(b);
+
+        /**
+         * Filter()
+         * 
+         */
+        document.write("------------------------------------------->")
+        var age = [10, 18, 20, 25, 30, 13, 17, 27];
+        document.write(age);
+
+        let evenCount = age.filter(evenNumber => evenNumber % 2 == 0);
+        document.write("<br>" + evenCount)
+
+        age.filter((evenNumber1) => {
+            if (evenNumber1 % 2 == 0) {
+                document.write(evenNumber1)
+            }
+
+        })
+        document.write("------------------------------------------->")
+        /**
+        * Destrcting of Array
+        */
+       
+const destrctingArray={
+    data:[
+        {
+            name:"darsh",
+            age:23
+        },
+        {
+            name:"mayur",
+            age:24
+        },
+        {
+            name:"kande",
+            age:1992
+        }],
+        address:"pune",
+        city:"nsk"
+        
+};
+let{ data,address,city}=destrctingArray;
+console.log(city);
+
+
+    </script>
+
+</body>
+
+</html>
