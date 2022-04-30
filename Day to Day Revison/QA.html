@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.write("<h1>======Method 1======= </h1>")
+        const names = ['irish', 'daisy', 'anna'];
+        names.forEach((upper) => {
+            let upper1 = upper.toUpperCase();
+            document.write(upper1 + "<br>");
+        })
+        document.write("<h1>===========Method 2============ </h1>")
+
+        const Newarray = [];
+        names.forEach((element) => {
+            Newarray.push(element.toUpperCase());
+        })
+        document.write(Newarray);
+        document.write("<h1>====Method 3 without for funcation=====</h1>")
+        const names1 = names.toString().toUpperCase();
+        document.write(names1)
+
+    </script>
+
+</body>
+
+</html>
