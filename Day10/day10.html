@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>OOPs in JavaScript</h3>
+    <script>
+        /*using prototype*/
+        class hellojs {
+            message() {
+                console.log("Hello Js");
+            }
+        }
+        let test = new hellojs();
+        test.message();
+        /*using constructor:type1*/
+        class hello {
+            constructor() {
+                console.log("I m in javascript");
+            }
+
+        }
+        let a = new hello();
+
+        /*Parameter raised constructor*/
+
+        class demo {
+            constructor(name, branch, rollno) {
+                this.name = name;
+                this.branch = branch;
+            }
+        }
+        const person1 = new demo('Pratiksha', 'cse', '17');
+        const person2 = new demo('Mayuri', 'electrical', '18');
+        const person3 = new demo('Megha', 'cse', '19');
+        const person4 = new demo('Shivani', 'entc', '20');
+
+        console.log(person1);
+        console.log(person2);
+        console.log(person3);
+        console.log(person4);
+        /*accessing by methods*/
+        class method {
+            constructor(name) {
+                this.name = name;
+            }
+            greet() {
+                console.log(`Hello ${this.name}`);
+            }
+        }
+        const person = new method('pratiksha')
+        console.log(person);
+        person.greet();
+    </script>
+</body>
+
+</html>
