@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="text-center badge-color-primary">All array methods</h2>
+    <h6 class="text-center primary" >1. Concat Methods</h6>
+    <p class="text-center" id="p1"></p>
+    <p class="text-center" id="p2"></p>
+    <p class="text-center" id="p3"></p><hr>
+    <h6 class="text-center primary" >2.IndexOf Method</h6>
+    <p class="text-center" id="p4"></p>
+    <p class="text-center" id="p5"></p>
+  
+    <p class="text-center" id="p55"></p><hr>
+
+    <h6 class="text-center primary" >3. join Method</h6>
+    <p class="text-center" id="p6"></p><hr>
+    <h6 class="text-center primary" >3. Pop Method</h6>
+    <p class="text-center" id="p7"></p><hr>
+    <h6 class="text-center primary" >3. Push Method</h6>
+    <p class="text-center" id="p8"></p><hr>
+    <h6 class="text-center primary" >3. Splice Method</h6>
+    <p class="text-center" id="p9"></p>
+    <p class="text-center" id="p10"></p>
+    <p class="text-center" id="p11"></p>
+    <p class="text-center" id="p12"></p>
+
+    <script>
+                let list1=['amruta','aarush','nikhil','shreesha'];
+                let list2=['1','2','3','4'];
+                let concatlist = list1.concat(list2);
+                console.log(concatlist);
+                document.getElementById('p1').innerHTML="First Array:-" +list1;
+                document.getElementById('p2').innerHTML="Second Array :-" +list2;
+                document.getElementById('p3').innerHTML="Concat two Array :-" +concatlist;
+
+                let indexoflist =list1.indexOf('amruta');
+                let lastlist =list1.lastIndexOf('shreesha');
+               {
+                document.getElementById('p4').innerHTML="First Array:-" +list1;
+                document.getElementById('p5').innerHTML=" first index of Array ="+indexoflist;
+                document.getElementById('p55').innerHTML=" Last index of Array="+lastlist;
+                }
+                
+                let joinList = list1.join("*");
+                document.getElementById('p6').innerHTML="join array="+joinList;
+
+                let poplist =list2.pop();
+                document.getElementById('p7').innerHTML="pop="+poplist
+
+                let pushlist =list1.push('deokate');
+                document.getElementById('p8').innerHTML="push="+pushlist;
+
+                let splicelist = list1.splice(2,2,'aarya','mona');
+                document.getElementById('p9').innerHTML=" Using Splice Two elements Delete="+splicelist;
+                document.getElementById('p10').innerHTML=" Using Splice Two elements Add:-" +list1;
+                let splicelist1 = list1.splice(2,2);
+                document.getElementById('p11').innerHTML=" Using Splice Two Elements Delete:-" +splicelist1;
+                document.getElementById('p12').innerHTML="Now Array is:-" +list1;
+                console.log (Array.isArray(list1));
+                // document.getElementById('p11').innerHTML=""+checkarray;
+               
+    </script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</html>
