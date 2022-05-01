@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        class calculations {
+            constructor(a, b) {
+                // var a;
+                // var b;
+                this.first = a;
+                this.second = b;
+                console.log("This is constructor");
+            }
+
+            // Prototype methods
+            percentCaclulation() {
+                var c = (this.first / this.second) * 100;
+                console.log("Percentage is " + c);
+            }
+
+            // Static function
+
+            static addn(a, b) {
+                var d = a + b;
+                console.log("addition is " + d);
+            }
+        }
+
+        var newObj = new calculations(5, 20);
+        newObj.percentCaclulation();
+        calculations.addn(10, 20);
+
+        // newObj.addn();     //error
+
+    </script>
+</body>
+
+</html>
