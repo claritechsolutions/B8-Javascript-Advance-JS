@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h2>javaScript Class</h2>
+      Enter Name: <input type="text" id="nm"></input>
+      Enter Author:<input type="text" id="au"></input>
+      Enter Pages: <input type="text" id="pag"></input>
+    <input type="button" value="click" onclick="display()"></button>
+    <script>
+              class Book{
+                  constructor(name,author,pages){
+                      this.name=name;
+                      this.author=name;
+                      this.author=name;
+                      
+                  }
+                  display(){
+                      //document.getElementById('nm').value=this.name;
+                      document.write(` ${this.name}`);
+                      console.log(this.name);
+                      //document.getElementById('au').value=this.author;
+                      //document.getElementById('pag').value=this.pages;
+                     // document.getElementById('ok')
+                  }
+                  
+              }
+              let bookObject= new Book(document.getElementById('nm').innerHTML=this.name)
+               bookObject.display();
+
+    </script>
+</body>
+</html>
