@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        class student {
+            constructor(name, age, branch) {
+                this.name = name;
+                this.age = age;
+                this.branch = branch;
+
+
+            }
+            showData() {
+                document.write(`Name : ${this.name}, Age : ${this.age}, Branch : ${this.branch} <br>`);
+
+            }
+            updateData(name) {
+                document.write("<h4>update Data</h4>");
+                document.write(`Name changed to : ${this.name}, Age : ${this.age}, Branch : ${this.branch} <br>`);
+
+            }
+        }
+        var stud1 = new student("Dhanu", 24, "Computer Science");
+        var stud2 = new student("Anu", 21, "Science");
+        var stud3 = new student("Renu", 25, "Electrical");
+        stud1.showData();
+        stud2.showData();
+        stud3.showData();
+        stud1.name = "lakshmi";
+        stud1.updateData();
+    </script>
+</body>
+
+</html>
