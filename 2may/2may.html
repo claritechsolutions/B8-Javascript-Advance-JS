@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Javascript class</h2>
+    
+    <script>
+        class car{
+            constructor(name,year){
+             this.carname = name;        /*When the this keyword is used in a constructor, it refers to the newly created object:*/
+             this.passingyear = year;
+            }
+
+            //Properties and methods can be added to a constructor using a prototype:
+
+            printcarinfo(){
+
+               document.write(`name::${this.carname},"year::"${this.passingyear}`);
+
+
+            }
+        }
+
+            //initialize class
+            let x = new car("ford","2021");
+            let y = new car("swift","2012");
+            x.printcarinfo();
+            y.printcarinfo();
+
+
+
+
+        
+    
+    
+    
+    </script>
+
+
+
+
+
+
+
+
+</body>
+</html>
