@@ -13,5 +13,5 @@
 // }while(a <=10); 
 // --------------********-------------------********---------------
 //  by using for loop
-for(var a =1; a<=10;a++);{
-console.log(a);}
+for(var a =1; a<=10;a++){
+console.log("hallo")}
