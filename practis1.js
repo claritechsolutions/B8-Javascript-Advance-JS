@@ -16,17 +16,18 @@ const cars =['bmw','tata','oudy','tata','farari'];
 // console.log(user);
 
 // By using break
-let user = "";
-for (let i = 0; i < 10; i++) {
+var user = [1,2,3,4,5,6,7,8,9,10];
+for (var i = 0; i < user.length; i++) {
   if (i === 3) { break; }
-  user += i;
+  console.log(user[i]);
 }
 
-console.log(user);
-//  by using continue
-let text = "";
-for (let i = 0; i < 10; i++) {
-  if (i === 3) { continue; }
-  text += "The number is " + i + "<br>";
-}
-console.log(text);
+
+
+// //  by using continue
+// let text = "";
+// for (let i = 0; i < 10; i++) {
+//   if (i === 3) { continue; }
+//   text += "The number is " + i +"\n";
+// }
+// console.log(text);

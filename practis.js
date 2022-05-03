@@ -12,3 +12,5 @@ console.log(array);
 // using slices
 const array3 = array.slice(3);
 console.log(array +array3 );
+
+//using pop & pull
