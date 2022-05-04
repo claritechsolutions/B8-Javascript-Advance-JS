@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .container {
+            border-radius: 5px;
+            background-color: aliceblue;
+            padding: 20px;
+            width: 500px;
+            margin: auto;
+        }
+        
+        input {
+            width: 100%;
+            padding: 5px 5px;
+            margin: 8px 0px;
+            display: inline-block;
+            border-radius: 5px;
+            /* box-sizing: border-box; */
+            border: antiquewhite;
+            border-style: solid;
+        }
+        
+        label {
+            font-weight: 600;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .formError {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form action="welcom.html" onsubmit="return validateForm()">
+                    <h1>Contact us</h1>
+                    <div>
+                        <label class="idclass">Your First name</label>
+                        <input type="text" name="fname" id="name">
+                        <b><small class="formError" id="fnameErr"></small></b>
+                    </div>
+                    <div>
+                        <label class="idclass">Enter Your phone Number</label>
+                        <input type="number" name="" id="phone">
+                        <b><small class="formError" id="phErr"></small></b>
+                    </div>
+                    <div>
+                        <label class="idclass">your Email ID</label>
+                        <input type="email" name="email" id="email">
+                        <b><small class="formError" id="emailErr"></small></b>
+                    </div>
+                    <div>
+                        <label class="idclass">Enter password</label>
+                        <input type="password" name="pass" id="password">
+                        <b><small class="formError" id="passErr"></small></b>
+                    </div>
+                    <div>
+                        <label class="idclass">Confirm password</label>
+                        <input type="password" name="pass" id="Cpassword">
+                        <b><small class="formError" id="cpassErr"></small></b>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit">
+                        <!-- <input type="reset" value="Reset"> -->
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="day10form.js"></script>
+
+</body>
+
+</html>
