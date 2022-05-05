@@ -40,7 +40,7 @@
                            
                             <div class="form-group mb-1 ">
                                 <label>Email-id</label>
-                                <input type="email" class="form-control rounded-pill" id="emailid" />
+                                <input type="text" class="form-control rounded-pill" id="emailid" />
                                 <div id="error" class="form-text "></div>
                             </div>
                            
@@ -123,21 +123,21 @@
              if(phone.test(phonen))
              {
                 document.getElementById("errorphone").style.color = 'green';
-                document.getElementById("errorphone").innerHTML = "Valid Phone "  
+                document.getElementById("errorphone").innerHTML = "Valid Phone " ; 
              }else {
                 document.getElementById("errorphone").style.color = 'red';
-                document.getElementById("errorphone").innerHTML = "Invalid Phone "
+                document.getElementById("errorphone").innerHTML = "Invalid Phone ";
              }
            
            
             //...................Emailid...............
              if (regex.test(user)) {
                 document.getElementById("error").style.color = 'green';
-                document.getElementById("error").innerHTML = "Valid Email-id "
+                document.getElementById("error").innerHTML = "Valid Email-id ";
                 
             } else {
                 document.getElementById("error").style.color = 'red';
-                document.getElementById("error").innerHTML = "Invalid Email-id "
+                document.getElementById("error").innerHTML = "Invalid Email-id ";
             }
            
            
