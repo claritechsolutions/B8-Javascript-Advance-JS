@@ -44,9 +44,7 @@ value
   /**Example No.1 */
   function test(text){
    return new Promise(function(resolve,reject){
-
     setTimeout (function(){
-
         console.log("Okay Let me think")
           if(text){
               resolve("Heyy,I m going to trip")
@@ -54,21 +52,16 @@ value
           {
               reject("I'm not going to trip")
           }
-        } ,1000);
-        
-
+        } ,1000);  
       })
   }
   test(false).then(
       function(result){
-          console.log("Result-->",result)
-      }
-  )
+          console.log("Result-->",result)}
+       )
   .catch(
      (error)=>{
-         console.log("Error-->",error)
-
-     }
+         console.log("Error-->",error)} 
   )
   /**Example no.2 */
   function evenOdd (number){
