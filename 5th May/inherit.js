@@ -48,3 +48,4 @@ let a = new salaryDetails("Avinash", "Developer",30, 50000,5000);
 a.empInfo();
 a.salInfo();
 // export {employee};
+
