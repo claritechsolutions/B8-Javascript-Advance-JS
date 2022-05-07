@@ -13,7 +13,7 @@ class employee {
 
     }
 }
-// let a = new employee("Avinash", "Developer", 50, 000);
+// let a = new employee("Avinash", "Developer", 50000);
 // a.empInfo();
 
 class salaryDetails extends employee {
