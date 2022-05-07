@@ -1,19 +1,18 @@
 /**
  * Destrcting of Array
  */
-
 var array = {
     data: [{
-            name: "Ankit",
-            age: ""
+            name: "dhanu",
+            age: 25
         },
         {
-            name: "Gorakh",
-            age: ""
+            name: "madhuri",
+            age: 25
         },
         {
-            name: "React Devs",
-            age: ""
+            name: "anu",
+            age: 23
         }
     ],
     page: [1, 2, 4, 5, 63, 2],
@@ -29,15 +28,13 @@ let { data, page, totalCount, abcd } = array;
 console.log("data ==>", data);
 console.log("page ==>", page);
 console.log("totalCount ==>", totalCount);
+console.log("Abcd==>", abcd);
 
 let a, b, rest;
 [a, b] = [10, 20];
 
 console.log(a);
-// expected output: 10
-
 console.log(b);
-// expected output: 20
 
 [a, b, ...rest] = [10, 20, 30, 40, 50];
 
