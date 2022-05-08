@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function prom (a,b){
+          return  new Promise( function(confirm,reject){
+              console.log("Plese wait, its take time.")
+              var c = a/b;
+              setTimeout(() => {
+                if (a,b){
+               confirm(`Your ans is:${c}`);
+           }else{
+               reject("Not calculate.");
+           }
+              },3000);
+           
+          });
+      }
+      let confirmation = (pass) => {
+          console.log(pass);
+      }
+      let rejection = (fail) => {
+          console.log(fail);
+      }
+      prom(12,5).then(confirmation).catch(rejection);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
