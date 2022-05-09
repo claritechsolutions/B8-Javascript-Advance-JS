@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    function div(a,b){
+        new Promise(function(resolve,reject){
+            let c= a / b;
+            setTimeout(() => {
+                 if(c){
+                resolve(`your Answser is :=${c}`);
+            }else{
+                reject(`Fail to calculate...`);
+            }
+        },3000);
+    })
+    }
+    let r = (result)=>{ 
+       console.log(result);
+    }
+
+   let e= (error)=>{
+        console.log(error);
+    }
+    prom(true).then(r).catch(e);
+   </script> 
+</body>
+</html>

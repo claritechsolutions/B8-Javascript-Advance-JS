@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let prom = function (name,marks,t){
+            return function(resolve,reject){
+                setTimeout(()=>{
+                    document.write(`Name=${name} and Marks=${marks}`);
+                    resolve(t)
+                },t*1000);
+            }
+        }
+        let p1 =new Promise(prom("amruta",50,1));
+        let p2= new Promise(prom("aarush",60,2));
+        let p3= new Promise(prom("shreesha",70,3));
+
+        Promise.all([p1,p2,p3]).then((a)=>{
+            document.write("result",a);
+             }).catch((b)=>{
+            document.write("Fail",b); 
+               })
+    </script>
+</body>
+</html>

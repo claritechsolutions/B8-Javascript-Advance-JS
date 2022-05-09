@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function prom (val){
+            return new Promise(function(resolve,reject){
+                console.log ("Fetching data......wait for some time..")
+                setTimeout(()=>{
+                    if(val == true){
+                        resolve(`function is start....`)
+                    }else{
+                        reject(`function not start......`)
+                    }
+                },3000);
+
+            })
+        }
+        let start = (s) =>{
+            console.log(s);
+        }
+        let end = (e) => {
+            console.log(e);
+        }
+      prom(true).then(start).catch(end);
+    </script>
+</body>
+</html>

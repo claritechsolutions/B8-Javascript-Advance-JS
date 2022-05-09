@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let pro = true;
+        let prom = new Promise(function (resolve, reject) {
+            if (pro == true) {
+                resolve(console.log("Hii...I will meet U..."))
+            } else {
+                reject(consloe.log("I can't meet....."))
+            }
+        });
+        function display(name, address) {
+            this.name = name;
+            this.address = address;
+            console.log(`hiii ${name}. i meet u in ${address}`);
+        }
+        function display2() {
+            console.log(`meet cancel........`);
+        }
+        prom.then(display("Shreesha", "pune"));
+        prom.catch(display2);
+
+    </script>
+</body>
+
+</html>
