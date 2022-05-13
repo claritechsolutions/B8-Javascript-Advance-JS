@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>.......Array with duplicate.......</h3>
+    <h4 id="p1"></h4>
+    <h3>.......Array without duplicate.......</h3>
+    <h4 id="p2"></h4>
+    <hr>
+    <h3>.......Array.......</h3>
+    <h4 id="p3"></h4>
+    <h4 id="p4"></h4>
+    <h4 id="p5"></h4>
+    <h4 id="p6"></h4>    <hr>
+    <h3>...........pincode.........</h3>
+    <input type="text" id="p7"/>
+    <button value="check" onclick="pincode()">check</button>
+    <h4 id="p8"></h4>
+    <h4 id="p9"></h4>
+     <script>
+        let list = [10, 20, 30, 20, 80, 90, 50, 20, 80];
+        document.getElementById('p1').innerHTML = list;
+        let list2 = [...new Set(list)];
+        document.getElementById('p2').innerHTML = list2;
+
+        function number() {
+            const arr = [14, 58, 20, 77, 66, 42, 67, 42, 4]
+
+            const max = Math.max(...arr)
+
+            const min = Math.min(...arr)
+
+            var max1 = Math.max.apply(null, arr);
+            arr.splice(arr.indexOf(max), 1)
+            let second = (Math.max.apply(null, arr));
+
+            document.getElementById('p3').innerHTML = arr;
+            document.getElementById('p4').innerHTML = `largest number in array is=${max}`
+            document.getElementById('p5').innerHTML = `Smallest number in array is=${min}`
+            document.getElementById('p6').innerHTML = `Second largest number in array is=${second}`
+        }
+        number();
+
+        pincode=()=>{
+         let pin= document.getElementById('p7').value;
+         if(pin.length==4 || pin.length==6)
+         {
+            document.getElementById('p8').innerHTML =`${pin} pin is valid`;
+         }else{
+            document.getElementById('p9').innerHTML = `${pin} pin is invalid`;
+         }
+        }
+    </script>
+</body>
+
+</html>
