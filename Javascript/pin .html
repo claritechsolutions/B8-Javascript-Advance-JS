@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="input">
+    <button onclick="f()">Click</button>
+    <p id="output"></p>
+
+    <script>
+        f=()=>{
+            let a=document.getElementById('input').value;
+            if((a.length ==4) || (a.length ==6)){
+                document.getElementById('output')
+                document.getElementById('output').innerHTML= 'Pin Accepted'
+            }
+            else{
+                document.getElementById('output')
+                document.getElementById('output').innerHTML= 'Only 4 or 6 digit Pin Accepted'
+            }
+            }
+        
+    </script>
+    
+</body>
+</html>
