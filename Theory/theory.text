@@ -1,0 +1,66 @@
+
+       // String methods
+        // 1.length
+        // 2.toLowercase
+        // 3.toUppercase
+        // 4.includes()
+        // 5.startswith()
+        // 6.endwith()
+        // 7.search()
+        // 8.match()
+        // 9.index()
+        // 10.lastindex()
+        // 11.replace
+        // 12.trim()
+        // 13.CharAt()
+        // 14.charCodeAt()
+        // 15.formcharcode
+        // 16.concat
+        // 17.repeat
+        // 18.split
+        // 19.slice
+        // 20.substr
+        // 21.substring
+        // 22.tostring
+        // 23.valueof()
+
+        //1.length
+        var a = "mayur is a Ias"
+        var b = a.length;
+        console.log(b);
+
+        // array length same as string length
+
+        //  2,3.to lowwercase & TO uppertcase
+        var K = a.toUpperCase()
+        console.log(K)
+        var m = K.toLowerCase()
+        console.log(m)
+
+        // 4.includes()
+        //  used to search purpose if search find then write true & then write false,it is check only one word ani more word and it is case sensitive
+        var n = a.includes("Ias")
+        console.log("==>", n)
+
+        // 5,6.startswith() & endwith()
+        // it is used to find start word and case sensitive
+
+        var o=a.startsWith("mayur")
+        console.log("=======>"+ o)
+
+         var p=a.endsWith("s")
+         console.log("=======>"+ p)
+
+        // 7. search():- it is work like include but give the position  number and casesensitive and if searchword not found then the position  is -1
+        var r=a.search("Z")
+        console.log("=====>"+r)
+
+        // 8.match()
+        /*i	Perform case-insensitive matching	
+          g	Perform a global match (find all matches rather than stopping after the first match) case-sensitive	
+         m Perform multiline matching & case-sensitive
+        *
+        */
+        var s=a.match(/A/m)
+        document.write(s)
+   
