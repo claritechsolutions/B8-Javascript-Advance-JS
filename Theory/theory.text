@@ -63,4 +63,7 @@
         */
         var s=a.match(/A/m)
         document.write(s)
-   
+   Definition and Usage
+The splice() method adds and/or removes array elements.
+
+The splice() method overwrites the original array.
