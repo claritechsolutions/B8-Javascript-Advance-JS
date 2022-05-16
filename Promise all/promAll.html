@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //* multiple promises*//
+
+        // let p1 = new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         console.log("This is first promise");
+        //         resolve(10);
+        //     }, 1000);
+        // });
+
+        // let p2 = new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         console.log("This is second promise");
+        //         resolve(20);
+        //     }, 2000);
+        // });
+
+        // let p3 = new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         console.log("This is third promise");
+        //         resolve(30);
+        //     }, 3000);
+        // });
+
+        //* OR *//
+
+        let promfun = function (returndata, message) {
+            return function (resolve, reject) {
+                setTimeout(() => {
+                    console.log(`This is ${message} promise`);
+                    resolve(returndata);
+                }, returndata * 100);
+            }
+        };
+
+        let p1 = new Promise(promfun(10, "First"));
+        let p2 = new Promise(promfun(20, "Second"));
+        let p3 = new Promise(promfun(30, "Third"));
+        // let p4 = new Promise(function (resolve, reject) {
+        //     reject(" Fourth promise has rejected");
+        // });
+
+        var a = 0;
+        Promise.all([p1, p2, p3]).then((result) => {
+            for (var i in result) {
+                a += result[i];
+            }
+            console.log("Result :" + result);
+            console.log("Total :" + a);
+        })
+            .catch((error) => { console.log("Error" + error); });
+    </script>
+</body>
+
+</html>
