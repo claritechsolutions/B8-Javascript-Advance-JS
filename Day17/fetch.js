@@ -27,7 +27,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
     .then((data) => {
         for (var i = 0; i < data.length; i++) {
-            console.log(data)
+           // console.log(data)
             document.getElementById("demo").innerHTML +=(`<tr><td>${data[i].id}</td>
             <td>${data[i].name}</td>
             <td>${data[i].username}</td> 
