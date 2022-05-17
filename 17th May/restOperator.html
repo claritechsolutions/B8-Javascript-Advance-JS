@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        function first(name, email, ...restdetails) {
+            document.write(`<b>Name is : </b>${name}  `);
+            document.write(`<b> email is :  </b>${email} `);
+            document.write(` <b> Remaining data :  </b>${restdetails}<hr> `);
+            let total = 0;
+            for (let index in restdetails) {
+                total += restdetails[index];
+            }
+            document.write(`Total of remaining arguments is : ${total}`);
+        }
+        first("Nandini", "Nandu23@gmail.com", 20, 34, 21, 56, 44);
+        // first("Nandini", "Nandu23@gmail.com", "Nandini", 34, 21, 56, 44);
+    </script>
+</body>
+
+</html>
