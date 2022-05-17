@@ -10,10 +10,10 @@
             let a= document.getElementById("FirstName").value;
             let b= document.getElementById("SecondName").value;
             if(a.length == b.length){
-              document.getElementById("Result").innerHTML=true;
+              document.getElementById("Check").innerHTML=true;
             }
             else{
-                document.getElementById("Result").innerHTML=false;
+                document.getElementById("Check").innerHTML=false;
             }
         }
     </script>
@@ -22,7 +22,7 @@
     FirstName: <input type="text" id="FirstName"><br><br>
     SecondName: <input type="text" id="SecondName"><br><br>
     <button onclick="stringcheck()">Result</button>
-    <p id="Result"></p>
+    <p id="Check"></p>
     
     
 </body>
