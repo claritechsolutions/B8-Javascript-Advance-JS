@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let complete = true;
+        // let prom = new Promise(function(resolve,reject){
+        // if(complete){
+        //     resolve('i am successful');
+        // }else{
+        //     reject('i am failed');
+        // }
+        // });
+        // console.log(prom);
+
+
+        // function prom(complete){
+        //     return new Promise(function(resolve,reject){
+        //         if(complete){
+        //             resolve('i am sucessful');
+        //         }
+        //         else{
+        //             reject('i am failed');
+        //         }
+        //     });
+        // }
+        // let onfulfilment = (result)=>{
+        //     console.log(result);
+        // }
+        // let onrejection = (error)=>{
+        //     console.log(result);
+        // }
+
+        // prom(true).then(onfulfilment);
+        // prom(false).catch(onrejection);
+        // //console.log(prom(true));
+
+
+        function prom(complete){
+            return new Promise(function(resolve,reject){
+                console.log('fecting data please wait')
+                setTimeout(()=>{
+                if(complete){
+                    resolve('i am sucessful');
+                }
+                else{
+                    reject('i am failed');
+                }
+            },1000)
+            });
+        }
+        let onfulfilment = (result)=>{
+            console.log(result);
+        }
+        let onrejection = (error)=>{
+            console.log(result);
+        }
+
+        prom(true).then(onfulfilment).catch(onrejection);
+        
+    </script>
+</body>
+</html>

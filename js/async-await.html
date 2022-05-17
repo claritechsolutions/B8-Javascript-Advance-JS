@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    async function test(){
+    //         return 'hello';
+    //     }
+    //     test().then((result)=>{
+    //         console.log(result);
+    //     })
+        
+
+        // let test = async function(){
+        //     return 'hello';
+        // }
+        // test().then((result)=>{
+        //     console.log(result);
+        // })
+
+        // let test = async()=>'hello';
+        
+        // test().then((result)=>{
+        //     console.log(result);
+        // }) 
+
+        // //await method
+        // async function test(){
+        //     console.log('2:message');
+        //    await console.log('3:message');
+        //     console.log('4:message');
+
+        // }
+        // console.log('1:message');
+        // test();
+        // console.log('5:message');
+
+        // async function test(){
+        //      console.log('2:message');
+        //     const response = await fetch("./student-data.json")
+        //     const students = await response.json();
+        //     return students;
+        //  }
+        //  console.log('1:message');
+        //  let a = test();
+        //  console.log('4:message');
+        //  console.log(a);
+        async function test() {
+     try {
+    const response = await fetch("./student-data.json");
+    const students = await response.json();
+
+    return students;
+  } catch (error) {
+    console.log(error);
+  }
+
+}
+test().then((res)=>{
+    console.log(res);
+});
+
+
+    </script>
+</body>
+</html>

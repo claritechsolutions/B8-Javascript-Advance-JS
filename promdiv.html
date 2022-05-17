@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function prom(a,b){
+            return new Promise(function(resolve,reject){
+                console.log('fecting data please wait')
+                var c=a/b;
+                setTimeout(()=>{
+                if(a,b){
+                    resolve(`your answer:&{c}`);
+                }
+                else{
+                    reject('failed to calculate');
+                }
+            },1000)
+            });
+        }
+    
+
+        prom(4/2).then((result)=>{console.log(result);}).catch((error)=>{console.log(error);});
+        
+    </script>
+</body>
+</html>

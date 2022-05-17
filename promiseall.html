@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let p1 = new Promise((resolve,reject)=>{
+          setTimeout(()=>{
+            console.log('the first promise has resolved');
+            resolve(10);
+          },1*1000);
+        });
+
+        let p2= new Promise((resolve,reject)=>{
+          setTimeout(()=>{
+            console.log('the second promise has resolved');
+            resolve(20);
+          },2*2000);
+        });
+
+        let p3 = new Promise((resolve,reject)=>{
+          setTimeout(()=>{
+            console.log('the third promise has resolved');
+            resolve(30);
+          },3*3000);
+        });
+
+        promise.all([p1,p2,p3]).then((result)=>{
+            console.log('result:$(result)')
+        }).catch((error)=>{
+            console.log('error:$(error)')
+        });
+    </script>
+</body>
+</html>
