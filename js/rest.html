@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(name, ...args){
+            console.log(arguments);
+            document.write(`hello ${name}:`);
+            let sum=0;
+            for(let i in args ){
+                sum += args[i];
+            }
+            document.write(sum +'<br>');
+        }
+        sum('yahoo baba',20,30,40);
+       // sum(20,30);
+    </script>
+</body>
+</html>
