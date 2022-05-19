@@ -17,6 +17,7 @@ const p1 = new Promise((resolve, reject) => {
     }, 3 * 1000);
   });
   
+  
   Promise.all([p1, p2, p3]).then((results) => {
     const total = results.reduce((p, c) => p + c);
   
