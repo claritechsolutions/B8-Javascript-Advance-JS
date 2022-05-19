@@ -1,0 +1,35 @@
+{
+  "student": [
+    {
+      "id": 1,
+      "Name": "Pratiksha Nalawade",
+      "Course": "B.TECH",
+      "City": "Satara"
+    },
+    {
+      "id": 2,
+      "Name": "Mayu",
+      "Course": "B.Tech",
+      "City": "Satara"
+    },
+    {
+      "id": 3,
+      "Name": "Shiv",
+      "Course": "M.Tech",
+      "City": "Satara"
+    },
+    {
+      "id": 4,
+      "Name": "Dhanshri",
+      "Course": "B.E",
+      "City": "Belgao"
+    },
+    {
+      "id": 5,
+      "Name": "Payal",
+      "Course": "M.Tech",
+      "City": "Mumbai"
+    }
+    
+  ]
+}
