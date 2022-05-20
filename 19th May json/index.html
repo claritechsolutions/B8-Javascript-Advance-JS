@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        td,
+        th {
+            border: 1px solid rgb(83, 110, 14);
+            padding: 10px;
+        }
+
+        table,
+        tbody {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+    </style>
+<div class="container align-content-center text-center">
+<button onclick="getinfo()" type="button" class="btn btn-primary mx-3" >GET</button>
+<button onclick="postinfo()" type="button" class="btn btn-success mx-3">POST</button>
+<button onclick="putinfo()" type="button" class="btn btn-danger mx-3">PUT</button>
+<button onclick="patchinfo()" type="button" class="btn btn-warning mx-3">PATCH</button>
+<button onclick="deleteinfo()" type="button" class="btn btn-secondary mx-3">DELETE</button>
+</div><HR>
+    <table>
+        <tr>
+            <td colspan="5" class="text-center"><b> User Details</b></td>
+        </tr>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>email</th>
+            <th>Address</th>
+        </tr>
+        <tbody id="details"></tbody>
+
+    </table>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
