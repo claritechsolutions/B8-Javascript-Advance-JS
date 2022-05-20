@@ -20,7 +20,7 @@ function postinfo() {
             id: 6,
             name: "Swapnali",
             email: "swapnaliP@gmail.com",
-            designation: "Mumbai"
+            address: "Mumbai"
         }),
         headers: {
             'Content-type': 'application/json',
