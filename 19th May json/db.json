@@ -1,0 +1,32 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Ashwin",
+      "email": "ashwinJ@gmail.com",
+      "address": "Delhi"
+    },
+    {
+      "id": 2,
+      "name": "Manisha",
+      "email": "manisha23@gmail.com",
+      "address": "Banglore"
+    },
+    {
+      "id": 3,
+      "name": "Ishita",
+      "email": "ishi12@gmail.com",
+      "address": "Pune"
+    },
+    {
+      "name": "Ketan",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "name": "Archit",
+      "email": "Archit@gmail.com",
+      "address": "Banglore"
+    }
+  ]
+}
