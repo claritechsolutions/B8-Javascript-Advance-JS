@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    
+    <style>
+        .form{
+            background-color: rgb(71, 83, 255);
+            width: 400px;
+            color: white;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+        .formErr{
+            color: red;
+            
+        }
+        .butt{
+            border-radius: 9px;
+            margin: 10px;
+            padding: 10px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FORM</h1>
+    <form name="myform" action="#" onsubmit= "validateform()" >
+    
+    <div class="form">
+        <label for="name">NAME:</label>
+        <input id="name" type="text" >
+       <div id="fname"></div>
+    </div>
+    <div class="form">
+        <label for="email">Email:</label>
+        <input id="email"  type="email">
+        <div id="Ename"></div>
+    </div>
+    <div class="form">
+        <label for="phone">Phone NO:</label>
+        <input id="phone"  type="text">
+        <div id="Pname"></div>
+    </div>
+    <div class="form">
+        <label for="password1">PASSWORD:</label>
+        <input id="password1"  type="password">
+        <div id="word1"></div>
+    </div>
+    <div class="form">
+        <label for="password2">CONFIRM PASSWORD:</label>
+        <input id="password2"  type="password">
+        <div id="word2"></div>
+    </div>
+    <input class="butt" type="submit" value="submit">
+    </form> 
+    <script src="fscript.js"></script>
+</body>
+   
+</html>
