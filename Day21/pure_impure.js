@@ -12,14 +12,14 @@
 // console.log(add());
 // console.log(add());
 // console.log(add());
-// const myNames = ["Oluwatobi", "Sofela"];
+const myNames = ["Oluwatobi", "Sofela"];
 
-// function updateMyName(newName) {
-//   myNames.push(newName);
-//   return myNames;
-// }
-//updateMyName()
-//console.log(updateMyName)
+function updateMyName(newName) {
+  myNames.push(newName);
+  return myNames;
+}
+updateMyName(myNames)
+console.log(updateMyName)
 /**
  * Pure function
  * 
