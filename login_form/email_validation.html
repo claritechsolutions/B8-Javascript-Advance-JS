@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>JS_Form_validation</title>
+    <style>
+        img {
+            height: 300px;
+        }
+
+        input:focus,
+        textarea:focus {
+
+            background-color:yellow;
+
+        }
+        .formError{
+            color: red;
+            font-style: italic;
+        }
+
+        .card-body{
+            background-image: linear-gradient(rgb(224, 153, 244), rgb(131, 239, 155), rgb(92, 238, 223));
+        }
+
+        .container{
+            box-shadow: 5px 5px 5px 5px lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="reg_form">
+        <div class="container my-5">
+            <div class="row justify-content-center my-5">
+                <div class="col-12 col-lg-9 col-xl-7">
+                    <div class="card-group">
+                        <div class="card">
+                            <img src = "/Practice/login_form/login.jpg">
+                            <div class="card-body">
+                                <h3 class="">Registration Form</h3>
+                                <form action="/Practice/login_form/login_submit.html" name="myForm" onsubmit="return CheckEmail(document.querySelector('#email').value)">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control my-2"
+                                                    id="floatingInput" name="fname" placeholder="FirstName">
+                                                <label for="floatingInput">First Name</label>
+                                                </b><span class="formError" id="fnameError"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control my-2" id="floatingInput"
+                                                    name="lname" placeholder="LastName">
+                                                <label for="floatingInput">Last Name</label>
+                                               </b><span class="formError" id="lnameError"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-floating my-2">
+                                                <input type="date" class="form-control" id="floatingInput"
+                                                 name="date">
+                                                <label for="floatingInput">Enter Birth Date</label>
+                                            </b><span class="formError" id="dateError"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <h6 class="my-2">Gender: </h6>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Male</label>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">Female</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input " type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Other</label>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-floating my-2">
+                                                <input type="text" class="form-control" id="email"
+                                                    name="email" placeholder="Email address">
+                                                <label for="floatingInput">Email address</label>
+                                            </b><span class="formError" id="emailError"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-floating my-2">
+                                                <input type="tel" id="phoneNumber" class="form-control" 
+                                                name="phone" maxlength="10" placeholder="Phone Number">
+                                                <label for="phoneNumber">Phone Number</label>
+                                                </b><span class="formError" id="numberError"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row ">
+                                        <div class="col-6">
+                                            <input class="btn btn-primary btn-md" type="submit" value="Submit" />
+                                        </div>
+                                    
+                                        <div class="col-6">
+                                            <button class="btn btn-warning btn-md" onclick="resetForm(); return false;">Reset</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+    <script src="/Practice/login_form/email_validation.js"></script>
+</body>
+
+</html>
