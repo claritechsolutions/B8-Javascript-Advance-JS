@@ -3,14 +3,17 @@ import './App.css';
 // import Hello from './Componants/test';
 // import Text from './Componants/Text';
 // import Jsxex from './Componants/Jsxex';
-import Hooks from './Componants/Hooks';
-import Form from './Componants/Form';
-
+// import Hooks from './Componants/Hooks';
+// import Form from './Componants/Form';
+// import ArrayObject from './Componants/Form2'
+import Form3 from './Componants/Form3';
 function App() {
   return (
     <div className="App">
-      <Hooks/>
-      <Form/>
+      <Form3/>
+      {/* <ArrayObject/> */}
+      {/* <Hooks/>
+      <Form/> */}
       {/* <Hello/>
       <Text name={'Pratiksha'} course={'React-Js'} score={'60'}>
         </Text>
