@@ -75,7 +75,6 @@ names.map((name, index) => {
       console.log("designation", designation)
     })
   
-    console.log("----")
   })
   console.log('"MAP END"')
 
