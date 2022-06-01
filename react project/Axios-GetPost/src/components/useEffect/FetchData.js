@@ -41,6 +41,7 @@ const DataFetch = () => {
                 console.log(error);
             });
     }, [101])
+    
     return (
         <div>
             <table>
