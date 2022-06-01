@@ -7,11 +7,15 @@ import './App.css';
  //import Form from './Componants/UseState/Form';
 // import ArrayObject from './Componants/UseState/Form2';
 //import Form3 from './Componants/UseState/Form3';
-import EffectTest from './Componants/UseEffect/EffectTest';
+//import EffectTest from './Componants/UseEffect/EffectTest';
+//import DataFetch from './Componants/UseEffect/DataFetch';
+import GetPost from './Componants/UseEffect/GetPost';
 function App() {
   return (
     <div className="App">
-      <EffectTest/>
+      <GetPost/>
+      {/* <DataFetch/> */}
+      {/* <EffectTest/> */}
       {/* <Form3/> */}
       {/* <ArrayObject/> */}
       {/* <Hooks/>
