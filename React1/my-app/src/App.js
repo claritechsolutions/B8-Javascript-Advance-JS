@@ -6,11 +6,13 @@ import './App.css';
  //import Hooks from './Componants/UseState/Hooks';
  //import Form from './Componants/UseState/Form';
 // import ArrayObject from './Componants/UseState/Form2';
-import Form3 from './Componants/UseState/Form3';
+//import Form3 from './Componants/UseState/Form3';
+import EffectTest from './Componants/UseEffect/EffectTest';
 function App() {
   return (
     <div className="App">
-      <Form3/>
+      <EffectTest/>
+      {/* <Form3/> */}
       {/* <ArrayObject/> */}
       {/* <Hooks/>
       <Form/> */}
