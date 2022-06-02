@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+nav {
+  background-color:cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 16px 32px;
+  color: black;
+  font-size: 20px;
+}
+
+nav a {
+  margin-right: 16px;
+}
+
+nav a.active {
+  text-decoration: none;
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: green;
+  
+}
+button{
+display: flex;  
+justify-content: center;  
+align-items: center;  
+}
