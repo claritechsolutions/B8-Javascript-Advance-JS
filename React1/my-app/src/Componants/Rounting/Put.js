@@ -3,6 +3,7 @@ import axios from "axios";
 const Put = () => {
     const [data, setData] = useState([])
     const [post, setPost] = useState('')
+    const[patch,setPatch] = useState('')
 
     useEffect(() => {
         axios.get('https://jsonplaceholder.typicode.com/posts')
@@ -28,6 +29,18 @@ const Put = () => {
     }
     // if (!post) return "No post!"
 
+    const patchData = (e) => {
+        e.preventDefault();
+        axios.patch(`https://jsonplaceholder.typicode.com/posts/2`, {
+            title: "Hello World"
+            
+        }).then((response) => {
+            console.log("patch data=>", response.data)
+            setPatch(response.data);
+        });
+
+    }
+
     const arr = data.map((data, index) => {
         return (
             <tr>
@@ -44,7 +57,8 @@ const Put = () => {
     return (
         <div>
             <h3 style={{ textAlign: "center" }}>Axios Method-Put Data<br></br>
-                <button type="button" class="btn btn-success" onClick={putData}>Put</button>
+                <button type="button" class="btn btn-success" onClick={putData}>Put</button><br></br>
+                <button type="button" class="btn btn-success" onClick={patchData}>Patch</button>
             </h3>
             <table class="table table-striped">
                 <thead style={{ border: '1px solid black' }}>
@@ -55,9 +69,11 @@ const Put = () => {
                     </tr>
                 </thead>
                 {arr}
-                {post.title}
-                {post.body}
+                
             </table>
+            {post.title}
+                {post.body}
+                {patch.title}
         </div>
     )
 }
