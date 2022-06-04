@@ -1,47 +1,36 @@
 // import logo from './logo.svg';
-import './App.css';
-// import Demo from './component/hello';
-// import Welcome from './component/prop';
-// import Hello from './component/helloJsx';
-// import Counter from './component/useState/counterUseState';
-// import Form from './component/useState/form.js';
-// import ArrayMethods from './component/filterarray'
-// import Practice from './component/useState/practice'
-// import Counter  from './component/useState/counter';
-// import Ganesh from './component/useState/arrayMethods';
 
-import Hookcounter from './component/useEffect/hookCounter'
+import "./App.css";
 
-
-// import Image1 from './component/image';
-// import Demo from './component/classHello';
-
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./component/routerDom/Navbar";
+// import User from "./component/routerDom/user";
+// import Post from "./component/routerDom/posts";
+// import Albums from "./component/routerDom/Albums";
+// import Comments from "./component/routerDom/Comments";
+import Home from "./component/routerDom/Home";
+import LocalJson from "./component/routerDom/LocalJson"
+import PutData from "./component/routerDom/PutData";
 function App() {
-    return (
-        <div className="App">
-          {/* <Demo/> 
-          <Hello/> */}
-          {/* <Welcome></Welcome>   */}
-         
-          {/* <Image1/> */}
-          {/* <Demo/> */}
-          {/* <Welcome name={'dhanashri'} desig={'Software Engineer'} values={[10,20,30]}/>
-          <Welcome name={'Anuradha'} desig={'Software Engineer'} values={[40,50,60]}/>
-          <Welcome name={'Pooja'} desig={'Software Engineer'} values={[70,80,90]}/> */}
+  return (
+    <div className="App"> 
 
-          {/* <Counter/>
-          <Form/> */}
-       
-          {/* <ArrayMethods/>
-          <Practice/> */}
+      {/* using Routing */}
+      <Navbar />
+       <Routes>
+        <Route path="/" element={<Home />}>Home</Route>
+        <Route path="/LocalJson" element={<LocalJson/>}></Route>
+        <Route path="/PutData" element={PutData}></Route>
+        {/* <Route path="/user" element={<User />}></Route>
+        <Route path="/posts" element={<Post />}></Route>
+        <Route path="/Albums" element={<Albums />}></Route>
+        <Route path="/Comments" element={<Comments />}></Route> */}
+      </Routes> 
 
-          {/* <Counter/>
-          <Ganesh/> */}
 
-          <Hookcounter/>
-
-        </div>
-      );
-    }
+     
+    </div>
+  );
+}
 
 export default App;
