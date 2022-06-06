@@ -1,0 +1,46 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Ashwin",
+      "email": "ashwinJ@gmail.com",
+      "address": "Delhi"
+    },
+    {
+      "id": 2,
+      "name": "Manisha",
+      "email": "manisha23@gmail.com",
+      "address": "Banglore"
+    },
+    {
+      "id": 3,
+      "name": "Ishita",
+      "email": "ishi12@gmail.com",
+      "address": "Pune"
+    },
+    {
+      "id": 4,
+      "name": "Shreyas",
+      "email": "Shreyas23@gmail.com",
+      "address": "Chennai"
+    },
+    {
+      "id": 5,
+      "name": "Archit",
+      "email": "Archit@gmail.com",
+      "address": "Banglore"
+    },
+    {
+      "name": "Smita",
+      "email": "shima@gmail.com",
+      "address": "Mumbai",
+      "id": "6"
+    },
+    {
+      "name": "",
+      "email": "vidya@gmail.com",
+      "address": "Nahur",
+      "id": "7"
+    }
+  ]
+}
