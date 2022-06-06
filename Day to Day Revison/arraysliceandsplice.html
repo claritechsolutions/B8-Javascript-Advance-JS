@@ -1,0 +1,54 @@
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //  var ary=[
+    //         ["mayur",18,"male","BE"],
+    //         ["aalesh",20,"male","BE"],
+    //         ["ganesh",21,"male","BE1"],
+    //         ["tau",22,"female","BE"]
+    //     ];
+    //     var ary1=ary.slice(1,3);
+    //     document.write("Mutidimensional arry length :-"+ary1.length);
+    //     document.write("<hr>")
+    //     document.write("============mutidimensional arry sort by alphabet================")
+    //     document.write("<table border='2px'>")
+    //     for(let i=0;i<4;i++){
+    //         document.write("<tr>")
+    //         for(let j=0;j<4;j++){
+    //             // document.write("<td> "+(ary[i][j])+"</td>");
+    //             document.write("<td> "+(ary1[i][j])+"</td>");
+    //         }
+    //         document.write("</tr>")
+    //     }
+    //     document.write("</table>")
+
+        var ary3=[
+            ["mayur",18,"male","BE"],
+            ["aalesh",20,"male","BE"],
+            ["ganesh",21,"male","BE1"],
+            ["tau",22,"female","BE"]
+        ];
+        ary3.splice(0,2,["dhanshri",22,"female","BE"]);
+        document.write("Mutidimensional arry length :-"+ary3.length);
+        document.write("<hr>")
+        document.write("============mutidimensional arry sort by alphabet================")
+        document.write("<table border='2px'>")
+        for(let i=0;i<4;i++){
+            document.write("<tr>")
+            for(let j=0;j<4;j++){
+                // document.write("<td> "+(ary[i][j])+"</td>");
+                document.write("<td> "+(ary3[i][j])+"</td>");
+            }
+            document.write("</tr>")
+        }
+        document.write("</table>")
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Output</title>
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <script>
+            function YesClick(){
+               document.write("<b><i>Record Deleted successfully..</b><i>");
+            }
+            function NoClick(){
+                document.write("You Canceled..");
+            }
+        </script>
+    </head>
+    <body class="container-fluid">
+        <div class="mt-2">
+            <button class="btn btn-danger" data-bs-target="#delete" data-bs-toggle="modal">Delete</button>
+            <div class="modal fade" id="delete">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Delete Record</h2>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Are you sure want to delete?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="YesClick()" data-bs-dismiss="modal" class="btn btn-primary">Yes</button>
+                            <button onclick="NoClick()" data-bs-dismiss="modal" class="btn btn-danger">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>

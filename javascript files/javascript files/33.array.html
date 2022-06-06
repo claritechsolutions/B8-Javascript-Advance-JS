@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   
+<script>
+    var categories = [];
+    categories[0] = "Electronics";
+    categories[1] = 10;
+    categories["2"] = true;
+    for(var property in categories)
+    {
+      document.write(`[${property}] - ${typeof property} : ${categories[property]}(${typeof categories[property]})<br>`);
+    }
+
+ </script>
+ <br><br><br>
+
+<script>
+    var values = [10, "John", true, ["Hyd", "Delhi"], function(){document.write("function in array..")}];
+ 
+    document.write(values[3][1] + "<br>");
+ 
+    values[4]();
+ </script>
+ <br><br>
+
+
+ 
+ <script>
+    var values = [10, "John", true, ["Hyd", "Delhi"], function(){document.write("function in array..")}];
+    
+    var [id, name, stock, cities, print] = values;
+    print();
+    document.write(stock);
+ </script>
+ </body>
+</html>

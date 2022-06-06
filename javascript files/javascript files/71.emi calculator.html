@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EMI Calculator</title>
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+        <script>
+            function AmountChange(){
+                document.getElementById("txtAmount").value = document.getElementById("amountRange").value;
+            }
+            function YearChange(){
+                document.getElementById("txtYear").value = document.getElementById("yearRange").value;
+            }
+            function InterestChange(){
+                document.getElementById("txtInterest").value = document.getElementById("interestRange").value;
+            }
+            function CalculateClick(){
+                var p = document.getElementById("txtAmount").value;
+                var r;
+                var n;
+                var emi;
+            }
+        </script>
+    </head>
+    <body class="container-fluid">
+        <h2>Personal Loan Calculator</h2>
+        <div class="row">
+            <div class="col">
+                <div class="input-group">
+                    <label class="input-group-text">Amount you need : </label>
+                    <input type="text" id="txtAmount" class="form-control">
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <label class="input-group-text">for : </label>
+                    <input type="text" id="txtYear" class="form-control">
+                    <label class="input-group-text">years </label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <label class="input-group-text">interest rate : </label>
+                    <input type="text" id="txtInterest" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                <div class="input-group">
+                    <label class="input-group-text"> 50,000/- </label>
+                    <input value="50000" onchange="AmountChange()" type="range" min="50000" max="550000" id="amountRange" class="form-range">
+                    <label class="input-group-text"> 5,50,000/- </label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <label class="input-group-text"> 2 </label>
+                    <input value="2" onchange="YearChange()" type="range" min="2" max="10" id="yearRange" class="form-range">
+                    <label class="input-group-text"> 10 </label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <label class="input-group-text"> 10% </label>
+                    <input value="10" onchange="InterestChange()" type="range" min="10" max="18" step="0.1" id="interestRange" class="form-range">
+                    <label class="input-group-text"> 18% </label>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <button class="btn btn-primary">Calculate</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Monthly Installement : <span></span></h1>
+            </div>
+        </div>
+    </body>
+</html>

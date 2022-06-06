@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment</title>
+        <script>
+            var UserDetails = {
+                "CardNumber": "4444555566667890",
+                "CVV": "3420",
+                "Expiry": "2024"
+            }
+            function PayClick(){
+                var card = document.getElementById("txtCard").value;
+                var cvv = document.getElementById("txtCvv").value;
+                var expiry = document.getElementById("lstExpiry").value;
+                var msg = document.getElementById("msg");
+                if(card==UserDetails.CardNumber)
+                {
+                    if(cvv==UserDetails.CVV){
+                        if(expiry==UserDetails.Expiry)
+                        {
+                            document.write("<h2>Payment Successfull..</h2>");
+                        }else {
+                            msg.innerHTML = "Invalid Expiry Year";
+                        }
+                    }else {
+                        msg.innerHTML = "Invalid CVV";
+                    }
+                }
+                else
+                {
+                    msg.innerHTML = "Invalid Card Number";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Payment Details</legend>
+            <dl>
+                <dt>Card Number</dt>
+                <dd><input type="text" id="txtCard"></dd>
+                <dt>CVV</dt>
+                <dd><input type="text"  id="txtCvv" size="4"></dd>
+                <dt>Expiry</dt>
+                <dd>
+                    <select   id="lstExpiry">
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                    </select>
+                </dd>
+            </dl>
+            <button onclick="PayClick()" id="btnPay">Pay</button>
+        </fieldset>
+        <h1 id="msg" align="center"></h1>
+    </body>
+</html>

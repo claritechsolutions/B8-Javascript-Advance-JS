@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Hierarchy</title>
+        <script type="text/javascript">
+            function bodyload(){
+                pic.src="../public/images/shoe.jpg";
+                frmRegister.btnRegister.value="Register";
+                window.document.forms[1].elements[1].value="Login";
+            }
+        </script>
+    </head>
+    <body onload="bodyload()">
+        <div>
+            <img width="100" name="pic" height="100" border="1">
+        </div>
+        <div>
+            <form name="frmRegister">
+                <h2>Register</h2>
+               
+                <input type="email">
+                <input type="button" name="btnRegister">
+               
+            </form>
+        </div>
+        <div>
+            <form>
+                <h2>Login</h2>
+                <input type="text">
+                <input type="button" name="btnLogin">
+            </form>
+        </div>
+    </body>
+</html>
+

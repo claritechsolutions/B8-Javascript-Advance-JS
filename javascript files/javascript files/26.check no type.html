@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Number</title>
+      <script>
+         function CalculateClick(){
+            var age = document.getElementById("Age").value;
+            var msg = document.getElementById("msg");
+
+            if(isNaN(age)){
+               msg.innerHTML = "Please Enter a Number";  
+            } else {
+               msg.innerHTML = "Your Age : " + age;
+            }
+         }
+      </script>
+   </head>
+   <body>
+      Age: <input type="text" id="Age">
+           <button onclick="CalculateClick()">Calculate</button>
+           <span id="msg"></span>
+   </body>
+</html>

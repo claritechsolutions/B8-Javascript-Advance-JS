@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//        <!--  const A=[1,2,3,4,5]
+// //         A.forEach((value)=>{
+// //             var a ;
+// //             a=Math.pow(value,2);
+// //             document.write(a);
+// //         })
+// //        var N=A.forEach((value)=>{
+// //             Math.pow(value,2)
+// // })
+// //         document.write(N);
+
+//     //   A.push("mayur")
+//     //     console.log(A)
+//     // A.slice(3,2)
+//     // console.log(A)
+
+    // debugger;
+    // for ( i=0;i<5;i++){
+    //     let B= "*";
+    //     document.write(B)
+    // } -->
+// const A=[2,4,6,8,10,17,12,14];
+// var B= [];
+// B=A.filter((value)=> value%2==0);
+// document.write(B+"<br>");
+// var c=B.join("-")+A;
+// document.write(c)
+// const A=[2,4,6,8,10,17,12,14];
+// var B=[];
+// A.forEach((value)=>{
+//     if (value%2==0){
+//         value.push("-")
+//     }
+//     else (!value%2==0){
+        
+//         value.push("")
+//     }
+//     document.write(value);
+var nums = [1,2,34,54,55,34,32,11,19,17,54,66,13];
+var evens = [];
+var odds = [];
+
+var evenNumbers = function(nums) {
+    for (var i = 0; i < nums.length; i++) {
+
+        if ((nums[i] % 2) != 1) {
+            evens.push(nums[i]);
+                console.log(evens);
+        }
+        else {
+            odds.push(nums[i]);
+                console.log(odds);
+        }
+    }
+
+};
+
+evenNumbers(nums);
+alert(evens);
+alert(odds);
+document.write(evenNumbers)
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

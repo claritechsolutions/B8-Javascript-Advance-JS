@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var ary=[
+    ["mayur",18,"male","BE"],
+    ["aalesh",20,"male","BE"],
+    ["ganesh",21,"male","BE1"],
+    ["tau",22,"female","BE"]
+];
+
+
+ary.unshift(["mahesh",15,"male","BE"]);
+document.write("Mutidimensional arry length :-"+ary.length);
+document.write("<hr>")
+document.write("============mutidimensional arry sort by alphabet================")
+document.write("<table border='2px'>")
+for(let i=0;i<5;i++){
+    document.write("<tr>")
+    for(let j=0;j<4;j++){
+        // document.write("<td> "+(ary[i][j])+"</td>");
+        
+        document.write("<td> "+(ary[i][j])+"</td>");
+    }
+    document.write("</tr>")
+}
+document.write("</table>")
+</script>
+</body>
+</html>

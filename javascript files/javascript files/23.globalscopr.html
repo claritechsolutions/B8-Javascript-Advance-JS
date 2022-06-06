@@ -1,0 +1,16 @@
+<script>
+    // module scope
+    var x = 10;
+    let y = 20;
+    const z = 30;
+    function f1(){
+       window.username = "John";
+       document.write("Function 1<br> x=" + x + "<br> y=" + y + "<br>z=" + z + "<br>");
+    }
+    function f2(){
+       document.write("Function 2<br> x=" + x + "<br> y=" + y + "<br>z=" + z + "<br>");
+       document.write("Function 2 : Hello ! " + username);
+    }
+    f1();
+    f2();
+ </script>

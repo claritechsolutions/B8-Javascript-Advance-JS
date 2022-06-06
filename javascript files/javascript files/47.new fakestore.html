@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping | Fakestore</title>
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <script>
+            function LoadCategories(){
+                fetch(`http://fakestoreapi.com/products/categories`)
+                .then(function(response){
+                    return response.json();
+                })
+                .then(function(data){
+                    data.unshift("all");
+                    for(var item of data)
+                    {
+                        var option = document.createElement("option");
+                        option.text= item.toUpperCase();
+                        option.value = item;
+                        document.getElementById("lstCategories").appendChild(option);
+                    }
+                })
+            }
+
+            function LoadProducts(url){
+             
+                fetch(url)
+                .then(function(response){
+                    return response.json();
+                })
+                .then(function(data){
+                    for(var item of data)
+                    {
+                        var div = document.createElement("div");
+                        div.className = "card m-2 p-2";
+                        div.style.width = "200px";
+                        div.innerHTML = `
+                          <img src=${item.image} height="150" class="card-img-top">
+                          <div class="card-header" style="height:170px">
+                            <p>${item.title}</p>
+                          </div>
+                          <div class="card-body">
+                            <h3>${item.price}</h3>
+                          </div>
+                          <div class="card-footer">
+                             <button onclick="AddToCartClick(${item.id})" class="btn btn-danger w-100">
+                              <span class="bi bi-cart4"></span> Add to Cart
+                            </button>
+                          </div>
+                        `;
+                        document.getElementById("catalog").appendChild(div);
+                    }
+                })
+            }
+
+            function bodyload(){
+                LoadCategories();
+                GetCartItemsCount();
+            }
+            function CategoryChange(){
+                var categoryname = document.getElementById("lstCategories").value;
+                if(categoryname=="all") {
+                    LoadProducts("http://fakestoreapi.com/products&quot;");
+                } else {
+                    LoadProducts(`http://fakestoreapi.com/products/category/${categoryname}`);
+                }
+            }
+            var CartItems = [];
+            function GetCartItemsCount(){
+                document.getElementById("lblCount").innerHTML = CartItems.length;
+            }
+
+            function AddToCartClick(id){
+               fetch(`http://fakestoreapi.com/products/${id}`)
+               .then(function(response){
+                 return response.json();
+               })
+               .then(function(data){
+                   CartItems.push(data);
+                   GetCartItemsCount();
+                   alert(`${data.title} \n Added to Cart`);
+               })
+            }
+            function ShowCart(){
+                document.querySelector("tbody").innerHTML = "";
+                for(var item of CartItems)
+                {
+                    var tr= document.createElement("tr");
+                    var tdTitle = document.createElement("td");
+                    var tdPrice = document.createElement("td");
+                    var tdPhoto = document.createElement("td");
+                    var tdRemove = document.createElement("td");
+
+                    tdTitle.innerHTML = item.title;
+                    tdPrice.innerHTML = item.price;
+
+                    var img = document.createElement("img");
+                    img.width="50";
+                    img.height="50";
+                    img.src= item.image;
+
+                    tdPhoto.appendChild(img);
+
+                    tdRemove.innerHTML = `
+                      <button class="btn btn-outline-danger">
+                        <span class="bi bi-trash2-fill"></span>  
+                      </button>
+                    `;
+
+                    tr.appendChild(tdTitle);
+                    tr.appendChild(tdPrice);
+                    tr.appendChild(tdPhoto);
+                    tr.appendChild(tdRemove);
+
+                    document.querySelector("tbody").appendChild(tr);
+                }
+            }
+
+
+           
+            function FilterChanged(value){
+               var optElectornics = document.getElementById("optElectornics");
+               if(optElectornics.checked) {
+                LoadProducts(`http://fakestoreapi.com/products/category/${value}`);
+               } else {
+                   document.getElementById("catalog").innerHTML ="";
+               }
+            }
+        </script>
+    </head>
+    <body class="container-fluid" onload="bodyload()">
+        <header class="bg-danger text-center text-white p-2">
+            <h1> <span class="bi bi-cart3"></span>Fakestore Shopping</h1>
+        </header>
+        <section class="row mt-3">
+            <div class="col-3">
+                <div>
+                    <label class="form-label">Select Category</label>
+                    <div>
+                        <select onchange="CategoryChange()" id="lstCategories" class="form-select">
+
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label>Filter</label>
+                    <ul class="list-unstyled">
+                        <li><input id="optElectornics" onchange="FilterChanged(this.value)" value="electronics" type="checkbox"> Electronics </li>
+                        <li><input onchange="FilterChanged(this.value)" value="jewelery" type="checkbox"> Jewelery </li>
+                        <li><input onchange="FilterChanged(this.value)" value="men's clothing" type="checkbox"> Men's Clothing </li>
+                        <li><input onchange="FilterChanged(this.value)" value="women's clothing" type="checkbox"> Women's Clothing </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-7">
+                <div id="catalog" class="d-flex overflow-auto flex-wrap" style="height: 500px;">
+
+                </div>
+            </div>
+            <div class="col-2">
+               <button onclick="ShowCart()" data-bs-target="#cart" data-bs-toggle="modal" class="btn btn-danger w-100">
+                 <span class="bi bi-cart4"></span> [<span id="lblCount"></span>]
+                  Your Cart Items
+               </button>
+               <div class="modal fade" id="cart">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Your Cart Items</h3>
+                            <button data-bs-dismiss="modal" class="btn-close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Price</th>
+                                        <th>Preview</th>
+                                        <th>
+                                            <span class="bi bi-trash-fill text-danger"></span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                  </div>
+               </div>
+            </div>
+        </section>
+        <script src="../../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>

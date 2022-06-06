@@ -1,0 +1,32 @@
+<script>
+    var Name = "Samsung TV";
+    var Price = 60000.55;
+    var Manufactured = new Date();
+    document.write(Manufactured);
+</script>
+<br><br><br>
+
+<script>
+    var Name = "Samsung TV";
+    var Price = 60000.55;
+    var Manufactured = new Date();
+    var days = ["Sunday","Monday","Tue","Wed","Thu","Fri","Saturday"];
+    var months = ["January","Feb","March","april","may"];
+    document.write(`
+       Weekday  :  ${days[Manufactured.getDay()]} <br>
+       Month    :  ${months[Manufactured.getMonth()]} <br>
+       Date     :  ${Manufactured.getDate()} <br>
+       Year     :  ${Manufactured.getFullYear()} <br>
+       Date     :  ${days[Manufactured.getDay()]}, ${Manufactured.getDate()} - ${months[Manufactured.getMonth()]} - ${Manufactured.getFullYear()}
+    `);
+</script>
+
+<br><br>
+<script>
+    var mfd = new Date("2022-02-10 16:34:21");
+    mfd.setDate(15);
+    mfd.setHours(04);
+    
+    document.write(mfd.toLocaleDateString());
+    document.write(mfd.toLocaleTimeString());
+ </script>

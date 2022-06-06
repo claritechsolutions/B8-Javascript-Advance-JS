@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array Manipulation</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <script>
+            var products = [];
+            var product = {Name:"", Price:0, City:""};
+            function LoadProducts(){
+                document.querySelector("tbody").innerHTML = "";
+                for(var item of products)
+                {
+                    var tr = document.createElement("tr");
+                    var tdName = document.createElement("td");
+                    var tdPrice = document.createElement("td");
+                    var tdCity = document.createElement("td");
+                    var tdDetails = document.createElement("td");
+                    var tdDelete = document.createElement("td");
+
+                    tdName.innerHTML= item.Name;
+                    tdPrice.innerHTML = item.Price;
+                    tdCity.innerHTML = item.City;
+                   
+                    var btnDetails = document.createElement("button");
+                    btnDetails.innerHTML = `<span class="bi bi-eye"></span>`;
+                    btnDetails.className = "btn btn-info";
+
+                    var btnDelete = document.createElement("button");
+                    btnDelete.innerHTML = `<span class="bi bi-trash"></span>`;
+                    btnDelete.className = "btn btn-danger";
+
+                    tdDetails.appendChild(btnDetails);
+                    tdDelete.appendChild(btnDelete);
+
+                    tr.appendChild(tdName);
+                    tr.appendChild(tdPrice);
+                    tr.appendChild(tdCity);
+                    tr.appendChild(tdDetails);
+                    tr.appendChild(tdDelete);
+
+                 
+                    btnDetails.onclick = function(){
+                        console.log(item);
+                    }
+
+                    btnDelete.onclick = function(){
+                       var result = products.find(function(value){
+                          return value.Name==item.Name;
+                       });
+                        var i = products.findIndex(function(value){
+                          return value.Name==item.Name;
+                       });
+                       products.splice(i,0);
+                       LoadProducts();
+                    }
+
+                    document.querySelector("tbody").appendChild(tr);
+                }
+            }
+            function bodyload(){
+                LoadProducts();
+            }
+            function AddClick(){
+                product = {
+                    "Name": document.getElementById("txtName").value,
+                    "Price": document.getElementById("txtPrice").value,
+                    "City": document.getElementById("lstCities").value
+                }
+                products.push(product);
+                LoadProducts();
+                alert("Product Added Successfully..");
+                document.getElementById("txtName").value = "";
+                document.getElementById("txtPrice").value="";
+            }
+            function InfoClick(name) {
+                alert(name)
+            }
+        </script>
+    </head>
+    <body onload="bodyload()" class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <div>
+                    <h3>Add New Product</h3>
+                    <dl>
+                        <dt>Name</dt>
+                        <dd>
+                            <input type="text" id="txtName" class="form-control">
+                        </dd>
+                        <dt>Price</dt>
+                        <dd>
+                            <input type="text" id="txtPrice" class="form-control">
+                        </dd>
+                        <dt>Shipped To</dt>
+                        <dd>
+                            <select class="form-select" id="lstCities">
+                                <option>Delhi</option>
+                                <option>Hyd</option>
+                            </select>
+                        </dd>
+                    </dl>
+                    <button onclick="AddClick()" class="btn btn-primary w-100">Add Product</button>
+                </div>
+            </div>
+            <div class="col-9">
+                <h2>Products List</h2>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Shipped To</th>
+                            <th colspan="2">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <div class="modal" id="detailsModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Details</h2>
+                            </div>
+                            <div class="modal-body">
+                                <dl>
+                                    <dt>Name</dt>
+                                    <dd></dd>
+                                    <dt>Price</dt>
+                                    <dd></dd>
+                                    <dt>City</dt>
+                                    <dd></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>

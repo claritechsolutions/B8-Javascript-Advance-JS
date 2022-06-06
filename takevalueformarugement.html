@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Give the number:<input type="text"  name="num" id="txt">
+    <button id="result" onclick="total()">ok</button><br>
+  <p id="demo"></p>
+    <script>
+    //  metod 1 without argument 
+    //  let total= function (){
+    //        let a=document.getElementById("txt").value;
+    //        a++ 
+    //         document.getElementById("demo").innerHTML="Answer "+a;
+
+    //     }
+
+
+     //  metod 1 with argument 
+        let total= function (num=(document.getElementById("txt").value)){
+         num++ 
+         (document.getElementById("demo").innerHTML="Answer :- "+num);
+
+        }
+      
+    </script>
+</body>
+</html>

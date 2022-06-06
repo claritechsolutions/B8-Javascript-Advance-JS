@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="bodyOnload()">
+    <body class="container-fluid" onload="bodyload()">
+        <div>
+            <img width="100" class="pic" name="pic" height="100" border="1">
+        </div>
+        <div>
+            <form name="frmRegister">
+                <h2>Register</h2>
+               
+                <input type="email">
+                <input type="button" class="btn btn-primary" id="btnRegister" name="btnRegister">
+               
+            </form>
+        </div>
+        <div>
+            <form>
+                <h2>Login</h2>
+                <input type="text">
+                <input type="button" id="btnLogin" class="btn btn-primary" name="btnLogin">
+            </form>
+        </div>
+
+        <script>
+            function bodyOnload(){
+             document.querySelector(".pic").src="Cleritech.png"
+             let a=document.getElementsByClassName("btn-primary")
+             alert("there are number of button "+a.length)
+            }
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Verify Mobile</title>
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+        <script>
+                var flag = "";
+                var regExp;
+                var placeholder = "";
+            function CountryChanged(){
+               
+                var countryname = document.getElementById("lstCountry").value;
+                switch(countryname){
+                    case "India":
+                    flag = "../public/images/india.png";
+                    regExp = /\+91\d{10}/;
+                    placeholder = "India Calling Code : +91 and number 10 digits";
+                    break;
+                    case "US":
+                    flag = "../public/images/us.png";
+                    regExp = /\+1\d{6}/;
+                    placeholder = "US Calling Code : +1 and number 6 digits";
+                    break;
+                    case "UK":
+                    flag = "../public/images/uk.png";
+                    regExp = /\+44\d{8}/;
+                    placeholder = "UK Calling Code : +44 and number 8 digits";
+                    break;
+                    default:
+                    flag ="";
+                    placeholder = "Please Select your country";
+                    break;
+                }
+                document.getElementById("flag").src= flag;
+                document.getElementById("txtMobile").placeholder = placeholder;
+            }
+            function VerifyClick(){
+                var mobile = document.getElementById("txtMobile").value;
+                var msg = document.getElementById("msg");
+                if(mobile.match(regExp))
+                {
+                    document.write("Registered successfully..");
+                } else {
+                    msg.innerHTML = `Invalid Mobile <br> ${placeholder}`.fontcolor('red');
+                }
+            }
+        </script>
+    </head>
+    <body class="container-fluid">
+        <h2>Verify Mobile</h2>
+        <dl>
+            <dt>Select Country</dt>
+            <dd class="input-group">
+                <select onchange="CountryChanged()" id="lstCountry" class="form-select">
+                    <option>Select Your Country</option>
+                    <option>India</option>
+                    <option>US</option>
+                    <option>UK</option>
+                </select>
+                <img id="flag" width="50" height="40">
+            </dd>
+            <dt>Your Mobile</dt>
+            <dd>
+                <input type="text" class="form-control" id="txtMobile">
+            </dd>
+        </dl>
+        <button onclick="VerifyClick()" class="btn btn-primary">Verify</button>
+        <h3 id="msg" align="center"></h3>
+    </body>
+</html>

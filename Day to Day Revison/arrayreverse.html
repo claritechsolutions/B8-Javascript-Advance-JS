@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var ary = [
+            ["mayur", 18, "male", "BE"],
+            ["aalesh", 20, "male", "BE"],
+            ["ganesh", 21, "male", "BE1"],
+            ["tau", 22, "female", "BE"]
+        ];
+
+        document.write("mutidimensional ary length :- " + ary.length + "<br>")
+        document.write("==============mutidimensional array by resverse method===============")
+        document.write("<table border='2px'>")
+        for (i = 0; i < ary.length; i++) {
+            document.write("<tr>");
+            for (j = 0; j < ary.length; j++) {
+                ary.reverse();
+                document.write("<td>" + ary[i][j] + "<td>")
+            }
+            document.write("<tr>");
+        }
+        document.write("<table>")
+
+        document.write("==============mutidimensional array by resverse method but we face one issue mutidimensional array first value only resverse and number value not reverse then use reverse& sort method===============")
+        document.write("<table border='2px'>")
+        for (i = 0; i < ary.length; i++) {
+            document.write("<tr>");
+            for (j = 0; j < ary.length; j++) {
+                ary.reverse(ary.sort((i, j) => { return i[1] - j[1] }));
+                document.write("<td>" + ary[i][j] + "<td>")
+            }
+            document.write("<tr>");
+        }
+        document.write("<table>")
+        document.write("==============mutidimensional array by reverse& sort method (only reverse first column)===============")
+        document.write("<table border='2px'>")
+        for (i = 0; i < ary.length; i++) {
+            document.write("<tr>");
+            for (j = 0; j < ary.length; j++) {
+                ary.reverse(ary.sort((i, j) => { return j[0] - i[0] }));
+                document.write("<td>" + ary[i][j] + "<td>")
+            }
+            document.write("<tr>");
+        }
+        document.write("<table>")
+        document.write("==============mutidimensional array by reverse& sort method (only reverse second column)===============")
+        document.write("<table border='2px'>")
+        for (i = 0; i < ary.length; i++) {
+            document.write("<tr>");
+            for (j = 0; j < ary.length; j++) {
+                ary.reverse(ary.sort((i, j) => { return j[1] - i[1] }));
+                document.write("<td>" + ary[i][j] + "<td>")
+            }
+            document.write("<tr>");
+        }
+        document.write("<table>")
+        document.write("==============mutidimensional array by reverse& sort method (only reverse third column)===============")
+        document.write("<table border='2px'>")
+        for (i = 0; i < ary.length; i++) {
+            document.write("<tr>");
+            for (j = 0; j < ary.length; j++) {
+                ary.reverse(ary.sort((i, j) => { return j[2] - i[2] }));
+                document.write("<td>" + ary[i][j] + "<td>")
+            }
+            document.write("<tr>");
+        }
+        document.write("<table>")
+            document.write("==============mutidimensional array by reverse& sort method (only reverse fourth column)===============")
+        document.write("<table border='2px'>")
+        for (i = 0; i < ary.length; i++) {
+            document.write("<tr>");
+            for (j = 0; j < ary.length; j++) {
+                ary.reverse(ary.sort((i, j) => { return j[3] - i[3] }));
+                document.write("<td>" + ary[i][j] + "<td>")
+            }
+            document.write("<tr>");
+        }
+        document.write("<table>")
+    </script>
+</body>
+
+</html>

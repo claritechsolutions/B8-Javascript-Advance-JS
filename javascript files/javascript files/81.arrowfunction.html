@@ -1,0 +1,74 @@
+<script>
+    /*
+     function Hello(){
+       document.write("Welcome to JavaScript");
+     }
+    */
+     var Hello = () => document.write("Welcome to JavaScript");
+     Hello();
+ </script>
+
+<script>
+    /*
+     function Hello(userName){
+       document.write(`Hello !  ${userName}`);
+     }
+    */
+     var Hello = userName => document.write(`Hello ! ${userName}`);
+     Hello("Mahesh");
+ </script>
+
+
+<script>
+    /*
+     function Hello(userName, age){
+       document.write(`Hello !  ${userName} your age is ${age}`);
+     }
+    */
+     var Hello = (userName, age) => document.write(`Hello ! ${userName} your age is ${age}`);
+     Hello("John", 22);
+ </script>
+
+
+ <!-- Ex: function with return value -->
+
+ <script>
+    /*
+      function Add(a,b)
+      {
+        return a + b;
+      }
+    */
+     var Add = (a,b) => a + b;
+     document.write("Addition=" + Add(20,30));
+ </script>
+ <br><br>
+
+ <!-- Ex: CallBacks using Arrow function -->
+
+<script>
+    function LoadProducts(){
+       fetch("http://fakestoreapi.com/products&quot;)
+       .then(response=> response.json())
+       .then(data=>{
+          for(var item of data){
+            document.write(item.title + "<br>");
+          }
+       })
+    }
+    
+    LoadProducts();
+</script>
+
+
+<script>
+     var products = [
+       {Name:"TV", Category:"Electronics"},
+       {Name:"Mobile", Category: "Electronics"},
+       {Name:"Nike Casuals", Category: "Footwear"}
+     ];
+     products.filter(function(product){
+            return products.Category=="Electronics";
+      })
+
+</script>

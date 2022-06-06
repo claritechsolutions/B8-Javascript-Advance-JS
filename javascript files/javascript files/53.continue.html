@@ -1,0 +1,16 @@
+<script>
+    var products = [
+        {Name: "TV", Category: "Electronics"},
+        {Name: "Nike Casuals", Category: "Footwear"},
+        {Name: "Winter Jacket", Category: "Fashion"},
+        {Name: "Mobile", Category:"Electronics"},
+        {Name: "Lee Cooper Boot", Category:"Footwear"}
+    ];
+    for(var product of products)
+    {
+        if(product.Category=="Footwear" || product.Category=="Fashion"){
+            continue;
+        }
+        document.write(product.Name + "<br>");
+    }
+</script>

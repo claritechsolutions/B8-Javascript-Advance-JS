@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array Demo</title>
+        <script>
+            var categories = ["All", "Electronics", "Footwear", "Fashion", "Men's Clothing"];
+            function bodyload(){
+                for(var item of categories)
+                {
+                    var li = document.createElement("li");
+                    li.innerHTML = item;
+                    document.querySelector("ol").appendChild(li);
+
+                    var option = document.createElement("option");
+                    option.text = item;
+                    option.value = item;
+
+                     document.querySelector("select").appendChild(option);
+
+
+                    var tr = document.createElement("tr");
+                    var td = document.createElement("td");
+                    td.innerHTML = item;
+                    tr.appendChild(td);
+
+                    document.querySelector("tbody").appendChild(tr);
+
+                    var checkLi = document.createElement("li");
+                    checkLi.innerHTML=`<input type="checkbox"> ${item}`;
+
+                    document.querySelector("ul").appendChild(checkLi);
+
+                    var div = document.createElement("div");
+                    div.innerHTML = `<button style="width:200px; margin-top:20px">${item}</button>`;
+
+                    document.querySelector("nav").appendChild(div);
+
+                }
+            }
+        </script>
+
+        <style>
+           .container {
+               display: flex;
+           }
+           .box {
+             margin-right: 20px;  
+           }
+           ul {
+               list-style: none;
+               height: 50px;
+               border: 2px solid black;
+               padding: 10px;
+               overflow: auto;
+           }
+        </style>
+    </head>
+    <body onload="bodyload()">
+       <div class="container">
+        <div class="box">
+            <h3>Categories List</h3>
+            <ol>
+
+            </ol>
+         </div>
+         <div class="box">
+             <h3>Select Category</h3>
+            <select>
+
+            </select>
+         </div>
+         <div class="box">
+            <h3>Categories Menu</h3>
+            <table border="1" width="200">
+              <thead>
+                  <tr>
+                      <th>Select Category</th>
+                  </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+         </div>
+         <div class="box">
+             <h3>Categories CheckList</h3>
+             <ul>
+
+             </ul>
+         </div>
+         <div class="box">
+             <h3>Nav Buttons</h3>
+             <nav>
+
+             </nav>
+         </div>
+       </div>
+    </body>
+</html>
+

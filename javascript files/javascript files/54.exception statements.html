@@ -1,0 +1,20 @@
+<script>
+    try{
+        var x = 10;
+        var y = 10 ;
+        var z = x / y;
+        if(y==0) {
+            throw "Divide By Zero Error: You can't divide by Zero";
+        }
+        if(y>x) {
+            throw "Number Too Big: Please Don't use a larger number than x";
+        }
+        document.write("z=" + z + "<br>");
+    }
+    catch(exp){
+        document.write(exp + "<br>");
+    }
+    finally {
+        document.write("Program End - Memory Cleaned");
+    }
+</script>

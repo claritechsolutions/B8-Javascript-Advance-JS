@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment</title>
+        <script>
+            var card = document.getElementById("txtCard").value;
+            var cvv = document.getElementById("txtCvv").value;
+            var year = document.getElementById("lstExpiry").value;
+            var UserDetails = {
+                "CardNumber": "4444555566667890",
+                "CVV": "3420",
+                "Expiry": "2024"
+            }
+            function VerifyCard(){
+                if(card==UserDetails.CardNumber) {
+                    document.getElementById("txtCvv").disabled= false;
+                }
+            }
+            function VerifyCvv(){
+                if(cvv==UserDetails.CVV) {
+                    document.getElementById("lstExpiry").disabled= false;
+                }
+            }
+            function VerifyYear(){
+                if(year==UserDetails.Expiry) {
+                    document.getElementById("btnPay").disabled=false;
+                }
+            }
+            function PayClick(){
+                document.write("<h2>Payment Successfull..</h2>");
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Payment Details</legend>
+            <dl>
+                <dt>Card Number</dt>
+                <dd><input type="text" onkeyup="VerifyCard()"  id="txtCard"></dd>
+                <dt>CVV</dt>
+                <dd><input type="text" onkeyup="VerifyCvv()" disabled id="txtCvv" size="4"></dd>
+                <dt>Expiry</dt>
+                <dd>
+                    <select disabled onchange="VerifyYear()" id="lstExpiry">
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                    </select>
+                </dd>
+            </dl>
+            <button onclick="PayClick()" disabled id="btnPay">Pay</button>
+        </fieldset>
+    </body>
+</html>

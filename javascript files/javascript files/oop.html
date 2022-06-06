@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OOP</title>
+        <script src="../library/HomeModule.js"></script>
+     <script type="module">
+            import PrintMessage, {PrintName} from '../library/HomeModule.js';
+            document.getElementById("root").innerHTML = PrintName() + "<br>" + PrintMessage("Welcome to JavaScript OOP");
+        </script>
+    </head>
+    <body>
+        <div id="root"></div>
+    </body>
+</html>

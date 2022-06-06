@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Hierarchy</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <script type="text/javascript">
+            function bodyload(){
+               x = document.getElementsByName("pic");
+               alert("Total Number of elements using pic name: " + x.length);
+
+            }
+        </script>
+    </head>
+    <body class="container-fluid" onload="bodyload()">
+        <div>
+            <img src="../javascript files/" width="100" id="pic" name="pic" height="100" border="1">
+        </div>
+        <div>
+            <form name="frmRegister">
+                <h2>Register</h2>
+               
+                <input type="email" name="pic">
+                <input type="button" class="btn btn-primary" id="btnRegister" name="btnRegister">
+               
+            </form>
+        </div>
+        <div>
+            <form>
+                <h2>Login</h2>
+                <input type="text">
+                <input type="button" id="btnLogin" class="btn btn-primary" name="btnLogin">
+            </form>
+        </div>
+    </body>
+</html>

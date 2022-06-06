@@ -1,0 +1,14 @@
+<!-- Ex: CallBacks using Arrow function -->
+
+<script>
+    function LoadProducts(){
+       fetch("http://fakestoreapi.com/products/1")
+       .then(response=> response.json())
+       .then(data=>{
+          for(var item of data){
+            document.write(item.title + "<br>");
+          }
+       })
+    }
+    LoadProducts();
+</script>

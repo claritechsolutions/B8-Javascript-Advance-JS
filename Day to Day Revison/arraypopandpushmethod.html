@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var ary = [
+            ["mayur", 18, "male", "BE"],
+            ["aalesh", 20, "male", "BE"],
+            ["ganesh", 21, "male", "BE1"],
+            ["tau", 22, "female", "BE"]
+        ];
+
+        ary.push(["mahesh", 12, "male", "BE"], ["dhanshree", 22, "female", "BE"]);
+        document.write("mutidimensional ary length :- " + ary.length + "<br>")
+        document.write("==============mutidimensional array by push method===============")
+        document.write("<table border='2px'>")
+        for (i = 0; i < ary.length; i++) {
+            document.write("<tr>");
+            for (j = 0; j < 4; j++) {
+
+                document.write("<td>" + ary[i][j] + "<td>")
+            }
+            document.write("<tr>");
+        }
+        document.write("<table>")
+
+
+
+
+        ary.pop();
+        document.write("mutidimensional ary length :- " + ary.length + "<br>")
+        document.write("==============mutidimensional array by pop method===============")
+        document.write("<table border='2px'>")
+        for (i = 0; i < ary.length; i++) {
+            document.write("<tr>");
+            for (j = 0; j < 4; j++) {
+
+                document.write("<td>" + ary[i][j] + "<td>")
+            }
+            document.write("<tr>");
+        }
+        document.write("<table>")
+
+    </script>
+
+</body>
+
+</html>

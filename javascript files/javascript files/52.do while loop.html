@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <script>
+            function VerifyUser(){
+                var username = document.getElementById("UserName").value;
+                var msg = document.getElementById("msg");
+                fetch("../data/users.json")
+                .then(function(response){
+                    return response.json();
+                })
+                .then(function(users){
+                     for(var user of users)
+                     {
+                         if(user.UserName==username){
+                             msg.innerHTML = "User Name Taken : Try Another".fontcolor('red');
+                            return;
+                         } else {
+                             msg.innerHTML = "User Name Available".fontcolor('green');
+                         }
+                     }
+                })
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Register User</legend>
+            <dl>
+                <dt>User Name</dt>
+                <dd><input onkeyup="VerifyUser()" type="text" id="UserName"></dd>
+                <dd id="msg"></dd>
+            </dl>
+           
+           
+        </fieldset>
+    </body>
+</html>
+
+

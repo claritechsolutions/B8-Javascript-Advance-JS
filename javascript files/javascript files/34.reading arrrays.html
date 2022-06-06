@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   
+
+<!-- You can read by using property name -->
+
+
+<!-- <script>
+    var categories = ["Electronics", "Footwear"];
+    document.write(categories["1"]);
+ </script>
+
+
+
+
+< You can use "toString()" , which returns all elements separated with delimeter ", " -->
+<!-- <br>
+<br>
+<script>
+    var categories = ["Electronics", "Footwear", "Fashion"];
+    document.write(categories.toString());
+ </script> --> -->
+ 
+
+
+
+
+
+ <!-- You can use "join()", which used custom delimeter. -->
+<!-- <br><br>
+ <script>
+    var categories = ["Electronics", "Footwear", "Fashion"];
+    document.write(categories.join("/"));
+ </script>
+  -->
+
+
+ <!-- You can read by using map(), It is an iterator that reads every element from array and presents in the UI. -->
+<!-- 
+<br><br>
+ <script>
+    var categories = ["Electronics", "Footwear", "Fashion"];
+    categories.map(function(category){
+       document.write(`<h2>${category}</h2>`);
+    })
+ </script> -->
+
+
+
+<!-- You can read by using for..in  statement, which returns all properties -->
+<script>
+    var categories = ["Electronics", "Footwear", "Fashion", "Fashion"];
+    for(var property in categories)
+    {
+      document.write("for in loop--------------->" + property + "<br>");
+    }
+ </script>
+
+<!-- You can read all values by using "for..of" -->
+<br><br>
+<script>
+    var categories = ["Electronics", "Footwear", "Fashion"];
+    for(var value of categories)
+    {
+      document.write(value + "<br>");
+    }
+ </script> 
+
+<!-- You can read both properties and values by using for..in -->
+ <br><br>
+<script>
+    var categories = ["Electronics", "Footwear", "Fashion"];
+    for(let property in categories)
+    {
+      document.write(`[${property}] : ${categories[property]}<br>`);
+    }
+ </script> 
+
+
+<!-- You can use "find()" method, which can search and return only the value that matches your condition. It returns single value.
+ -->
+ <br><br>
+<script>
+    var sales = [45000, 66000, 62000, 24000, 56300];
+    var result = sales.find(function(value){
+       return value<=50000;
+    });
+    document.write(result);
+ </script> 
+
+
+<!-- You can use "filter()" method, which returns all values that match the given condition. -->
+ <br><br>
+<script>
+    var sales = [45000, 66000, 62000, 24000, 56300];
+    var result = sales.filter(function(value){
+       return value>=50000;
+    });
+    document.write(result);
+ </script> 
+
+
+<!-- You can use "for" loop for reading values -->
+<br><br> 
+ <script>
+    var sales = [45000, 66000, 62000, 24000, 56300];
+    for(var i=0; i<sales.length; i++)
+    {
+     document.write(sales[i] + "<br>");
+    }
+ </script>
+
+<!-- Presenting Buttons with Map -->
+<br><br> 
+<script>
+    var categories = ["Electronics", "Footwear", "Fashion"];
+    categories.map(function(category){
+       document.write(`<button>${category}</button>`);
+    })
+ </script>
+
+<!-- Presenting Images -->
+<br><br>
+<script>
+    var products = ["india.png", "../inages/001.jpg", "../inages/003.jpg"];
+    products.map(function(path) {
+      document.write(`<div><img src=${path} width="100" height="100"></div>`);
+    }) 
+ </script>
+ </body>
+ </html>

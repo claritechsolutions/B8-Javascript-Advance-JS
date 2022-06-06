@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Switch Demo</title>
+        <script>
+            function CityChanged(){
+                var cityname = document.getElementById("lstCities").value;
+                var status = "";
+                switch(cityname)
+                {
+                    case "Delhi":
+                    status = `Delivery for your ${cityname} will be in 2 days`;
+                    break;
+                    case "Hyderabad":
+                    status = `Delivery for your ${cityname} - Same day`;
+                    break;
+                    default:
+                    status = `Please Select your city`;
+                    break;
+                }
+                document.getElementById("msg").innerHTML = status;
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Your City</legend>
+            <select onchange="CityChanged()" id="lstCities">
+                <option>Select Your City</option>
+                <option>Delhi</option>
+                <option>Hyderabad</option>
+            </select>
+        </fieldset>
+        <h2 id="msg" align="center"></h2>
+    </body>
+</html>

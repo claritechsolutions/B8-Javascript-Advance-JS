@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="text"> min <br>
+    <button onclick="A.sec()" style="margin-top:15px ;">ok</button>
+    <p id="txt1"></p>
+    <p id="txt2"></p>
+
+    
+    <script>
+
+        // function timeConversion()
+    
+        // {
+            //  var a=(document.getElementById("text")).value
+        //     var C =(a*60)
+        //     var b=document.getElementById("txt1").innerHTML=(C+" sec");
+        //     document.getElementById("txt2").innerHTML=(C*60 + " msec");
+        
+        
+        // }
+    
+        class timeConversion{
+            constructor(num)
+            {
+                this.number=(num);
+            }
+            sec ()
+            {
+                
+                document.write(`This Convert Min To Sec ${(this.number*60)}`)
+            }
+        }
+        let A= new timeConversion(document.getElementById("text").value);
+        A.sec();
+         
+        
+    </script>
+</body>
+</html>

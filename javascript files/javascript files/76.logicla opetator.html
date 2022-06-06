@@ -1,0 +1,15 @@
+<script>
+    var data = [
+        {Name: "TV", Category: "Electronics"},
+        {Name: "Nike Casuals", Category: "Footwear"},
+        {Name: "Mobile", Category: "Electronics"},
+        {Name: "Backpack", Category: "Fashion"}
+    ];
+    var result = data.filter(function(item){
+        return item.Category=="Electronics" || item.Category=="Fashion";
+    })
+    for(var item of result){
+        document.write(item.Name + "<br>");
+    }
+</script>
+

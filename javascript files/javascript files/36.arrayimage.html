@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo</title>
+    <script>
+      function CreateClick(){
+         var pic = document.createElement("img");
+         pic.width = "100";
+         pic.height = "100";
+         pic.border = "1";
+         pic.src = "../public/images/jacket.jpg";
+         pic.style.marginTop = "50px";
+         document.getElementById("container").appendChild(pic);
+      }
+    </script>
+  </head>
+  <body>
+     <div>
+       <button onclick="CreateClick()">Create Image</button>
+     </div>
+     <div id="container">
+       
+     </div>
+  </body>
+</html>
+

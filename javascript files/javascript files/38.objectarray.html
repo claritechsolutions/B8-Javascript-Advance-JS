@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object Demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <script>
+            function GetClick(){
+                document.getElementById("detailsContainer").style.display = "block";
+                fetch("../data/product.json")
+                .then(function(response){
+                    return response.json();
+                })
+                .then(function(product){
+                        document.getElementById("lblName").innerHTML = product.Name;
+                        document.getElementById("lblPrice").innerHTML = product.Price;
+                        document.getElementById("productImg").src= product.Photo;
+                        document.getElementById("lblStock").innerHTML = (product.Stock==true)?"Available":"Out of Stock";
+                })
+            }
+        </script>
+    </head>
+    <body class="container-fluid">
+        <div class="mt-2">
+            <button onclick="GetClick()" class="btn btn-primary">Get Product</button>
+        </div>
+        <div id="detailsContainer" style="display: none;">
+            <h3>Product Details</h3>
+            <dl>
+                <dt>Name</dt>
+                <dd id="lblName"></dd>
+                <dt>Price</dt>
+                <dd id="lblPrice"></dd>
+                <dt>Preview</dt>
+                <dd>
+                    <img id="productImg" width="50" height="50">
+                </dd>
+                <dt>Stock</dt>
+                <dd id="lblStock"></dd>
+            </dl>
+        </div>
+    </body>
+</html>

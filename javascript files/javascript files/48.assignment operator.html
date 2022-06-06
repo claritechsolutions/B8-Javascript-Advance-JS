@@ -1,0 +1,12 @@
+<head>
+    <script>
+        function AddClick(){
+            var folderName = prompt("Enter Name");
+            document.querySelector("p").innerHTML += `Folder Created : ${folderName} <br>`;
+        }
+    </script>
+  </head>
+  <body>
+      <button onclick="AddClick()">Add Folder</button>
+      <p></p>
+  </body>

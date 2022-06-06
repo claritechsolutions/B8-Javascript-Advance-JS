@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img id="pic" width="800" height="300" border="10">
+    </div>
+    <div>
+        <form>
+            <h2>Register</h2>
+            <input type="email">
+            <input type="button" id="btnRegister" name="btnRegister">
+        </form>
+    </div>
+    <div>
+        <form>
+            <h2>Login</h2>
+            <input type="text">
+            <input type="button" class="btnLogin" name="btnLogin">
+        </form>
+    </div>
+    <div>
+        <form>
+            <h2>number</h2>
+            <input type="text">
+            <input type="button" class="btnLogin1" name="btnLogin1">
+        </form>
+    </div>
+    <script>
+        // why CSS selector ===> if id selector then required id if used class selector then required class+++++selector
+        // but you used quary selector then you can id,class,tag,name
+        document.querySelector("img").src="Cleritech.png";
+        document.querySelector("#btnRegister").value="Register";
+        document.querySelector(".btnLogin").value="login"
+        document.querySelector(".btnLogin1").value="number"
+    </script>
+</body>
+</html>

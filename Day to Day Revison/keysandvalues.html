@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var grid = [[], []]
+        // let keysAndValues={
+        //     a:1,
+        //     b:2,
+        //     c:3
+        // }
+        // var a = (Object.keys(keysAndValues))
+        // grid[[0]] = a;
+        // var b = (keysAndValues.a + "," + keysAndValues.b + "," + keysAndValues.c);
+        // grid[[1]] = b;
+        // document.write("========>[[" + grid[0] + "],[ " + grid[1] + "]]")
+
+        // document.write("<hr>")
+
+        // var grid1 = [[], []]
+        // let keysAndValues1 = { a: "Apple", b: "Microsoft", c: "Google" }
+        // var a = (Object.keys(keysAndValues1))
+        // // grid1[[0]] = a;
+        // // var b = (keysAndValues1.a + "," + keysAndValues1.b + "," + keysAndValues1.c);
+        // // grid1[[1]] = b;
+        // // document.write("========>[[" + grid1[0] + "],[ " + grid1[1] + "]]")
+
+        // document.write("<hr>")
+        // var grid2 = [[], []]
+        // let keysAndValues2 = { key1:true, key2:false, key3: undefined }
+        // console. (Object.keys(keysAndValues2))
+        // // grid2[[0]] = a;
+        // // var b = (keysAndValues2.key1+ "," + keysAndValues2.key2 + "," + keysAndValues2.key3);
+        // // grid2[[1]] = b;
+        // // document.write("========>[[" + grid2[0] + "],[ " + grid2[1] + "]]")
+
+
+        function keyAndValues(arr) {
+            keys = Object.keys(arr);
+            values = Object.values(arr);
+            console.log( "[[" + keys + "],[" + values + "]]");
+        }
+        console.log(keyAndValues({ a: 1, b: 2, c: 3 }));
+        console.log(keyAndValues({ a: "Apple", b: "Microsoft", c: "Google" }));
+        console.log(keyAndValues({ key1: "true", key2: "false", key3: "Undefined" }));
+
+    </script>
+</body>
+
+</html

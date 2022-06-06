@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Input</title>
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <script type="text/javascript">
+            function RegisterClick(){
+                document.getElementById("detailsContainer").style.display = "block";
+                document.getElementById("lblName").innerHTML = document.getElementById("ProductName").value;
+                document.getElementById("lblPrice").innerHTML = document.getElementById("ProductPrice").value;
+                document.getElementById("lblCity").innerHTML = document.getElementById("ProductCity").value;
+
+                StockCheckBox = document.getElementById("ProductStock");
+                StatusMessage = "";
+                if(StockCheckBox.checked) {
+                    StatusMessage = "Available";
+                } else {
+                    StatusMessage = "Out of Stock";
+                }
+
+                document.getElementById("lblStock").innerHTML = StatusMessage;
+               
+            }
+            function EditClick(){
+                document.getElementById("btnRegister").innerHTML = "Update";
+            }
+        </script>
+        <style>
+            dd,dt {
+                margin-bottom: 20px;
+            }
+            dd {
+                background-color: lemonchiffon;
+               
+            }
+            dt {
+                background-color: lightcyan;
+            }
+        </style>
+    </head>
+    <body class="container-fluid">
+        <div class="mt-2">
+            <button data-bs-target="#register" data-bs-toggle="modal" class="btn btn-primary">Register Product</button>
+            <div class="modal fade" id="register">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Register New Product</h3>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-2">
+                                <label class="form-label">Name</label>
+                                <div>
+                                    <input type="text" class="form-control" id="ProductName">
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label class="form-label">Price</label>
+                                <div>
+                                    <input type="text" class="form-control" id="ProductPrice">
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label class="form-label">Shipped To</label>
+                                <div>
+                                    <select class="form-select" id="ProductCity">
+                                        <option>Delhi</option>
+                                        <option>Hyd</option>
+                                        <option>Chennai</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label class="form-label">Stock</label>
+                                <div class="form-switch">
+                                   <input type="checkbox" class="form-check-input" id="ProductStock"> Available
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="modal-footer">
+                            <button id="btnRegister" onclick="RegisterClick()" class="btn btn-primary" data-bs-dismiss="modal">Register</button>
+                            <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-3" style="display: none;" id="detailsContainer">
+            <h2>Product Details</h2>
+            <dl class="row w-50">
+                <dt class="col-3">Name</dt>
+                <dd class="col-9" id="lblName"></dd>
+                <dt class="col-3">Price</dt>
+                <dd class="col-9" id="lblPrice" ></dd>
+                <dt class="col-3">Shipped To</dt>
+                <dd class="col-9" id="lblCity"></dd>
+                <dt class="col-3">Stock</dt>
+                <dd class="col-9" id="lblStock"></dd>
+            </dl>
+            <button onclick="EditClick()" data-bs-target="#register" data-bs-toggle="modal" class="btn btn-link">Edit Details</button>
+        </div>
+
+        <script src="../../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>

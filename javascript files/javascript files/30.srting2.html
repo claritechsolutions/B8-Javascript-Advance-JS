@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String Demo</title>
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+        <script>
+            function VerifyCard(){
+                var txtCard = document.getElementById("txtCard").value;
+                var pic = document.getElementById("pic");
+                if(txtCard.startsWith("33333")) {
+                    pic.src="../inages/football.jpg";
+                } else if(txtCard.startsWith("5555")) {
+                    pic.src="../inages/01.jpg";
+                } else {
+                    pic.src="";
+                    pic.alt="Invalid";
+                }
+            }
+            function VerifyEmail(){
+                var email = document.getElementById("txtEmail").value;
+                var error = document.getElementById("error");
+                if(email.endsWith("gmail.com")) {
+                    error.innerHTML = "";
+                } else {
+                    error.innerHTML = "Please enter a valid gmail account";
+                    error.className = "text-danger";
+                }
+            }
+        </script>
+    </head>
+    <body class="container-fluid">
+        <h2>Verify Card</h2>
+        <div class="input-group">
+            <input type="text" onkeyup="VerifyCard()" class="form-control" id="txtCard">
+            <span class="input-group-text">
+                <img width="80" id="pic" height="50">
+            </span>
+        </div>
+        <h2>Verify Gmail</h2>
+        <div>
+            <input type="text" onblur="VerifyEmail()" id="txtEmail" class="form-control">
+            <div id="error"></div>
+        </div>
+    </body>
+</html>

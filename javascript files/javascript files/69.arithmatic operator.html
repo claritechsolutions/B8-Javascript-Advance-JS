@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            demo of arithmatic
+        </title>
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <style>
+            #price{
+                position:fixed;
+                top:200px;
+                right:250px;
+                font-size: 25px;
+                font-weight: bold;
+                border:2px solid black;
+                background-color: yellow;
+                padding: 5px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+        </style>
+        <script>
+            function LoadProducts(id){
+                fetch(`https://fakestoreapi.com/products/${id}`)
+                .then (function(response){
+                    return response.json();
+                })
+                .then(function(data){
+                        document.getElementById("pic").src=data.image;
+                        document.getElementById("title").innerHTML=data.title;
+                        document.getElementById("rating").innerHTML=data.rating.rate+"<span class='bi bi-star-fill text-success'></span>";
+                        document.getElementById("price").innerHTML=data.price;
+                })
+            }
+            function bodyload(){
+                LoadProducts(2);
+            }
+            var LoadItem=1;
+            function NextClick(){
+               LoadItem++;
+               LoadProducts(LoadItem);
+
+            }
+            function PreviousClick(){
+                LoadItem--;
+                LoadProducts(LoadItem);
+            }
+            function StartShow(){
+                LoadItem++;
+                LoadProducts(LoadItem);
+            }
+            var show;
+            function PlayClick(){
+              show= setInterval(StartShow,5000);
+              document.getElementById("status").innerHTML="slide show started";
+            }
+            function PauseClick(){
+                clearInterval(show);
+                document.getElementById("status").innerHTML="slide show stop";
+            }
+        </script>
+    </head>
+    <body onload="bodyload()" class="container-fluid" >
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="card " style="width: 350px;">
+                <div class="card-header text-center">
+                    <button onclick="PlayClick()" class="btn btn-danger" ><span class="bi bi-play"></span></button>
+                    <button onclick="PauseClick()" class="btn btn-danger" > <span class="bi bi-pause"></span></button>
+                </div>
+
+                <img id="pic" height="250" src="" alt="" class="card-img-top">
+                <div class="card-header">
+                    <div id="price"></div>
+
+                </div>
+
+                <div class="card-body">
+                     <p id="title"></p>
+                     <p id="rating"></p>
+                </div>
+
+
+                <div class="card-footer text-center">
+                    <button onclick="PreviousClick()" class="btn btn-danger"><span class="bi bi-chevron-left"></span></button>
+                    <button onclick="NextClick()"  class="btn btn-danger"><span class="bi bi-chevron-right"></span></button>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

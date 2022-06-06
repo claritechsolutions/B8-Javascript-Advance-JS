@@ -1,0 +1,22 @@
+<script>
+    class Product
+    {
+        Name = "Samsung TV";
+        Price = 56000.44;
+        Rating = {
+            Rate : 3.4,
+            Count: 4600,
+            Status: {
+                Details: "Out of Stock"
+            }
+        }
+        get Rate(){
+            return this.Rating.Rate;
+        }
+        get StockDetails(){
+            return this.Rating.Status.Details;
+        }
+    }
+    let obj = new Product;
+    document.write(obj.Rate + "<br>" + obj.StockDetails);
+</script>

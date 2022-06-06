@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            array new file
+        </title>
+        <script>
+            var categories=["all","electronics","mobiles","foorwear","wathches"];
+            function bodyload(){
+                for(var item of categories)
+                {
+                    var li = document.createElement("li");
+                    li.innerHTML= item;
+                    document.querySelector("ol").appendChild(li);
+
+                    var option =document.createElement("option");
+                    option.text=item;
+                    option.value=item;
+                    document.querySelector("select").appendChild(option);
+
+                    var td =document.createElement("td");
+                    var tr =document.createElement("tr");
+                    td.innerHTML=item;
+                    tr.appendChild(td);
+                    document.querySelector("tbody").appendChild(tr);
+
+                    var div= document.createElement("div");
+                    div.innerHTML=`<button style="width:80px; margin-top:20px">${item}</button>`;
+                    document.querySelector("nav").appendChild(div);
+
+                    var list = document.createElement("li");
+                    list.innerHTML=`<input type="checkbox">${item}`
+                    document.querySelector("ul").appendChild( list)
+                   
+                    
+                }
+            }
+            function buttonclick(){
+                document.getElementById("container").style.display = "block";
+            }
+        </script>
+    </head>
+    <body onload= "bodyload()">
+        <div >
+            <button  onclick="buttonclick()" >
+                open categories
+            </button>
+        </div>
+        <div id="container" style="display: flex; display: none;" >
+            <div>
+                <h1>categories List</h1>
+                <ol>
+                    
+                </ol>
+            </div>
+            <div style="margin-left: 20px;">
+               <h1> select option</h1>
+               <select name="" id="">
+
+               </select>
+
+            </div>
+            <div style="margin-left: 20px;">
+                <table border="1" width="200" >
+                    <h1>tabel categories</h1>
+                    <thead>
+                       <tr>
+                           <th>categories</th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                      
+                    </tbody>
+
+                </table>
+            </div>
+            <div style="margin-left: 20px;"> 
+                <h1>nav butttons</h1>
+                <nav>
+
+                </nav>
+            </div>
+            <div   style="margin-left: 20px;">
+                <h1>list items</h1>
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

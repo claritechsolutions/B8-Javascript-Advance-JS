@@ -1,0 +1,40 @@
+<script>
+    function GetProducts(){
+      fetch("../data/38.product.json")
+      .then(function(response){
+          return response.json();
+      })
+      .then(function(data){
+         
+              for(var property in data){
+                  document.write(`${property} : ${typeof data[property]} <br>`);
+              }
+         
+      })
+    }
+  
+    GetProducts();
+</script>
+
+
+
+
+
+  insatance of
+
+  <script>
+    class Employee {
+
+    }
+    class Product {
+
+    }
+    let tv = new Product();
+    let david = new Employee();
+    let products = new Array();
+
+    document.write(products instanceof Object);
+    document.write(products instanceof Array);
+  </script>
+
+  

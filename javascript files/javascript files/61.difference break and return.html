@@ -1,0 +1,77 @@
+<script>
+    function F1(){
+        var x = 2;
+    switch(x)
+    {
+        case 1:
+        document.write("One");
+        break;
+        case 2:
+        document.write("Two");
+        return;
+        case 3:
+        document.write("Three");
+        break;
+        default:
+        document.write("Please enter 1 to 3");
+        break;
+       
+    }
+    }
+    F1();
+</script>
+
+
+
+<script>
+    var choice = "N";
+    switch(choice)
+    {
+        case "y":
+        case "Y":
+        document.write("You selected Yes..");
+        break;
+        case "n":
+       
+        document.write("You selected No..");
+        break;
+        default:
+        document.write("Please enter only y or n");
+        break;
+    }
+</script>
+
+<script>
+    var choice = "NO";
+    switch(choice.toLowerCase())
+    {
+        case "yes":
+        document.write("You selected Yes..");
+        break;
+        case "no":
+        document.write("You selected No..");
+        break;
+        default:
+        document.write("Please enter only yes or no");
+        break;
+    }
+</script>
+
+
+<script>
+    var Name = prompt("Enter Product Name");
+    switch(Name.toLowerCase())
+    {
+        case "apple":
+        case "grape":
+        document.write(`Your Product ${Name} belongs to Fruits`);
+        break;
+        case "mobile":
+        case "tv":
+        document.write(`Your Product ${Name} belongs to Electronics`);
+        break;
+        default:
+        document.write("Please Enter any Electronics of Fruit Name");
+        break;
+    }
+</script>

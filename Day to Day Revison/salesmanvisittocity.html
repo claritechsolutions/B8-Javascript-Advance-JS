@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    salesman visit city:- <input type="text" id="demo">
+    <p id="Result"></p>
+   <button onclick="SaleCity()" style="margin-left: 175px;">ok</button>
+    <script>
+        // var city = document.getElementById("demo").innerHTML;
+        function SaleCity(){
+        var city = document.getElementById("demo").value;
+        switch (city) {
+            case "nashik":
+                document.write("<h3>Nashik</h3>"+5 + "<br>" + "<b>path:-</b><br>" + "1.intial to nashik<br>" 
+                + "2.pune to nashik<br>" + "3.mumbai to nashik<br>" + "4.mumbai,pune to nashik<br>" 
+                + "5.pune,mumbai to nashik");
+                break;
+            case "pune":
+            document.write("<h3>pune</h3>"+5 + "<br>" + "<b>path:-</b><br>" + "1.intial to pune<br>" 
+                + "2.nashik to pune<br>" + "3.mumbai to pune<br>" + "4.mumbai,nashik to pune<br>" 
+                + "5.nashik,mumbai to pune");
+                break;
+            case "mumbai":
+            document.getElementById("Result").innerHTML=("<h3>mumbai</h3>"+5 + "<br>" + "<b>path:-</b><br>" + "1.intial to mumbai<br>" 
+                + "2.mumbai to pune<br>" + "3.pune to mumbai<br>" + "4.pune,nashik to mumbai<br>" 
+                + "5.pune,nashik to IT");
+                break;
+        }}
+    </script>
+</body>
+
+</html>

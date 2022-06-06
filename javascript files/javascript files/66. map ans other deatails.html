@@ -1,0 +1,23 @@
+<script>
+    var topics = new Map();
+    topics.set("HTML", "It is a markup language");
+    topics.set(1, "CSS Styles");
+    document.write(topics.get("HTML"));
+</script>
+
+
+<script>
+    var topics = new Map();
+    topics.set("HTML", "It is a markup language");
+    topics.set(1, "CSS Styles");
+    for(var item of topics.entries()){
+        document.write(item + "<br>");
+    }
+</script>
+<script>
+    var topics = new Map();
+    topics.set("HTML", "It is a markup language");
+    topics.set(1, "CSS Styles");
+    document.write(topics.has(1));
+</script>
+

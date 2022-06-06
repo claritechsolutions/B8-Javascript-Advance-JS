@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Output</title>
+        <script>
+           
+            function DeleteClick(){
+                flag = confirm("Delete Record\nRecord will be deleted");
+               if(flag==true){
+                   alert("Record Deleted Successfully..");
+               } else {
+                   alert("You Canceled");
+               }
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Click Delete button to Delete Record</h2>
+        <button onclick="DeleteClick()">Delete</button>
+    </body>
+</html>

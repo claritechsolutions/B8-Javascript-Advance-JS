@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password</title>
+        <script>
+            function VerifyPassword(){
+                var asswpord = document.getElementById("Password").value;
+                var regExp = /(?=.*[A-Z])\w{4,15}/;
+                var msg = document.getElementById("msg");
+
+                function SetMeter(min, max, value, low, high){
+                    var statusMeter = document.getElementById("statusMeter");
+                    statusMeter.min = min;
+                    statusMeter.max = max;
+                    statusMeter.value = value;
+                    statusMeter.low= low;
+                    statusMeter.high = high;
+                }
+
+                if(password.match(regExp)) {
+                    msg.innerHTML = "Strong Password";
+                    SetMeter(1,100,100,0,0);
+                } else {
+                    if(password.length<4) {
+                        msg.innerHTML = "Poor Password";
+                        SetMeter(1,100,100,60,80);
+                    } else {
+                        msg.innerHTML = "Weak Password";
+                        SetMeter(1,100,100,40,80);
+                    }
+                }
+            }
+        </script>
+        <style>
+            meter, input {
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Verify Password</legend>
+            <div>
+                <input type="password" onkeyup="VerifyPassword()" id="Password">
+                <div>
+                    <meter id="statusMeter" min="1" max="100"></meter>
+                </div>
+                <div id="msg"></div>
+            </div>
+        </fieldset>
+    </body>
+</html>

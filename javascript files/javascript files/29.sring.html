@@ -1,0 +1,11 @@
+<script>
+    function SentenceCase(string){
+        var firstChar = string.charAt(0);
+        var restChar = string.substr(1,6);
+        var sentence = firstChar.toUpperCase() + restChar.toLowerCase();
+        return sentence;
+    }
+    var message = "welCOMe TO JAVascript";
+    document.write(message + "<br>");
+    document.write(SentenceCase(message));
+</script>

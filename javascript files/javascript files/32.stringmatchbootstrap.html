@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password</title>
+        <script>
+            function VerifyPassword(){
+                var password = document.getElementById("Password").value;
+                var regExp = /(?=.*[A-Z])\w{4,15}/;
+                var statusBar = document.getElementById("statusBar");
+
+                function SetStatus(bgClass, width, message){
+                    statusBar.style.width=width;
+                    statusBar.className=`${bgClass} progress-bar progress-bar-animated progress-bar-striped`;
+                    statusBar.innerHTML = message;
+                }
+
+                if(password.match(regExp)) {
+                    SetStatus('bg-success','100%', 'Strong Password');
+                } else {
+                    if(password.length<4) {
+                        SetStatus('bg-danger','30%', 'Poor Password');
+                    } else {
+                       SetStatus('bg-warning', '70%', 'Weak Password');
+                    }
+                }
+            }
+        </script>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body class="container-fluid">
+        <fieldset>
+            <legend>Verify Password</legend>
+            <div>
+                <input type="password" class="form-control" onkeyup="VerifyPassword()" id="Password">
+                <div class="progress mt-3">
+                    <div id="statusBar" class="progress-bar progress-bar-animated progress-bar-striped">
+
+                    </div>
+                </div>
+                <div id="msg"></div>
+            </div>
+        </fieldset>
+        <script src="../../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>

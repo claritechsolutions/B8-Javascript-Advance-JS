@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button value="sortAlphabet" onclick="sortAlphabet()">sort Alphabet</button>
+    <button onclick="numberAscendingOrder()">number Ascending Order</button>
+    <button onclick="numberDescendingOrder()">number Descending Order</button>
+    <button onclick="numberAscendingES6()">number Ascending ES6</button>
+    <script>
+        var ary = [
+            ["mayur", 18, "male", "BE"],
+            ["aalesh", 20, "male", "BE"],
+            ["ganesh", 21, "male", "BE1"],
+            ["tau", 22, "female", "BE"]
+        ];
+        document.write("Mutidimensional arry length :-" + ary.length);
+        document.write("<hr>")
+        function sortAlphabet() {
+                document.write("============mutidimensional arry sort by alphabet================")
+                document.write("<table border='2px'>")
+                for (let i = 0; i < 4; i++) {
+                    document.write("<tr>")
+                    for (let j = 0; j < 4; j++) {
+                        // document.write("<td> "+(ary[i][j])+"</td>");
+                        ary.sort()
+                        document.write("<td> " + (ary[i][j]) + "</td>");
+                    }
+                    document.write("</tr>")
+                }
+                document.write("</table>")
+            
+        }
+
+        function numberAscendingOrder() {
+            document.write("============mutidimensional arry sort by number by ascending order=================")
+            document.write("<table border='2px'>")
+            for (let i = 0; i < 4; i++) {
+                document.write("<tr>")
+                for (let j = 0; j < 4; j++) {
+                    // document.write("<td> "+(ary[i][j])+"</td>");
+                    ary.sort(function (i, j) { return i[1] - j[1] })
+                    document.write("<td> " + (ary[i][j]) + "</td>");
+                }
+                document.write("</tr>")
+            }
+            document.write("</table>")
+        }
+        function numberDescendingOrder() {
+            document.write("============mutidimensional arry sort by number by descending order=================")
+            document.write("<table border='2px'>")
+            for (let i = 0; i < 4; i++) {
+                document.write("<tr>")
+                for (let j = 0; j < 4; j++) {
+                    // document.write("<td> "+(ary[i][j])+"</td>");
+                    ary.sort(function (i, j) { return j[1] - i[1] })
+                    document.write("<td> " + (ary[i][j]) + "</td>");
+                }
+                document.write("</tr>")
+            }
+            document.write("</table>")
+        }
+        function numberAscendingES6() {
+            document.write("============mutidimensional arry sort by number by ascending ES6=================")
+            document.write("<table border='2px'>")
+            for (let i = 0; i < 4; i++) {
+                document.write("<tr>")
+                for (let j = 0; j < 4; j++) {
+                    // document.write("<td> "+(ary[i][j])+"</td>");
+                    ary.sort((i, j) => { i[1] - j[1] })
+                    document.write("<td> " + (ary[i][j]) + "</td>");
+                }
+                document.write("</tr>")
+            }
+            document.write("</table>")
+        }
+    </script>
+</body>
+
+</html>

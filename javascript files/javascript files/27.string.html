@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <style>
+            form {
+                border:2px solid gray;
+                padding: 20px;
+            }
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 400px;
+            }
+        </style>
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+        <script>
+            function ChangeMode(){
+                var theme = document.getElementById("theme");
+                if(theme.checked) {
+                    document.querySelector("form").className = "bg-dark p-3 text-white";
+                    document.querySelector("button").className = "btn btn-light w-100";
+                } else {
+                    document.querySelector("form").className = "bg-light p-3 text-dark";
+                    document.querySelector("button").className = "btn btn-dark w-100";
+                }
+            }
+        </script>
+    </head>
+    <body class="container-fluid">
+       <div class="container">
+         <form>
+            <div class="form-switch">
+                <input id="theme" onchange="ChangeMode()" class="form-check-input" type="checkbox"> Dark Mode
+            </div>
+            <h2>Register</h2>
+            <dl>
+                <dt>User Name</dt>
+                <dd><input type="text"></dd>
+                <dt>Password</dt>
+                <dd><input type="password"></dd>
+                <dt>Email</dt>
+                <dd><input type="email"></dd>
+            </dl>
+            <button class="btn btn-dark w-100">Register</button>
+          </form>
+       </div>
+    </body>
+</html>

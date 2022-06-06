@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validation</title>
+        <script>
+            function VerifyNumber(){
+                var n = parseInt(document.getElementById("txtEven").value);
+                var msg = document.getElementById("msg");
+                if(n%2==0)
+                {
+                    msg.innerHTML = "";
+                } else {
+                    msg.innerHTML = "Not an Even Number".fontcolor('red');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Enter an Even Number</legend>
+            <div>
+                <input onblur="VerifyNumber()" type="text" id="txtEven">
+                <div id="msg"></div>
+            </div>
+        </fieldset>
+    </body>
+</html>

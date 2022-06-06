@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+      <div>
+        <img width="800" height="200" border=10px >
+      </div>
+      <div>
+        <form>
+            <h2>Register</h2>
+            <input type="button" name="name">
+            <input type="email">
+           
+        </form>
+    </div>
+    <div>
+        <form>
+            <h2>Login</h2>
+            <input type="text" id="text1" >
+            <input type="button"onclick="SaleCity()">
+            <p id="demo"></p>
+        </form>
+    </div>
+    </body>
+    <script>
+        window.document.images[0].src="Cleritech.png";
+        window.document.forms[0].elements[0].value="darshan";
+        window.document.forms[1].elements[1].value="login";
+        window.document.forms[1].elements[1].value="mayur";
+        
+
+        function SaleCity(){
+            
+            var a=document.getElementById("text1").value
+            if(a==1234){
+                document.getElementById("demo").innerHTML="Enter password valid"
+            }
+        }
+    </script>
+
+</html>
