@@ -30,13 +30,11 @@ const LocalJson = () => {
       .post(`http://localhost:3001/student/`, val)
       .then((response) => {
         console.log(response.data);
-        // setName(newName);
-        // setBranch(newBranch);
+      
       })
       .catch((error) => console.log(error));
   };
-  //put Data
-//   const[name,setName]=useState([]);
+ 
   const putData = (id) => {
  
     console.log(id);
