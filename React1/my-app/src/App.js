@@ -11,12 +11,15 @@ import './index.css'
 import React from 'react';
 import ComponentA from './Componants/useContext/ComponentA';
 export const userContext = React.createContext();
+export const channelContext =React.createContext();
 function App() {
   return (
     <div className="App">
       <userContext.Provider value={" Heyy i'm Pratiksha"}>
+        <channelContext.Provider value={"I'm learning React Js"}>
         Heyy I'm App.js
         <ComponentA/>
+        </channelContext.Provider>
         </userContext.Provider>
       
     </div>
