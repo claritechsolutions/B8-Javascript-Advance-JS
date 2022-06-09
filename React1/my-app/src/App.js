@@ -1,27 +1,20 @@
 //import logo from './logo.svg';
 import './App.css';
-import './index.css'
-// import GetLocal from './Componants/LocalServer/GetLocal';
-// import PostLocal from './Componants/LocalServer/PostLocal';
-// import PutLocal from './Componants/LocalServer/PutLocal';
-// import DeleteLocal from './Componants/LocalServer/DeleteLocal'
+// import './index.css'
 // Routing
 //import { Routes, Route } from 'react-router-dom';
 //import Navbar2 from './Componants/LocalServer/Navbar2';
-import React from 'react';
-import ComponentA from './Componants/useContext/ComponentA';
-export const userContext = React.createContext();
-export const channelContext =React.createContext();
+// import React from 'react';
+import Counter from './Componants/UseReduce/Counter';
+import Counter2 from './Componants/UseReduce/Counter2';
+import Form from './Componants/UseReduce/Form';
+
 function App() {
   return (
     <div className="App">
-      <userContext.Provider value={" Heyy i'm Pratiksha"}>
-        <channelContext.Provider value={"I'm learning React Js"}>
-        Heyy I'm App.js
-        <ComponentA/>
-        </channelContext.Provider>
-        </userContext.Provider>
-      
+      <Counter2/>
+      <Counter/>
+      <Form/>
     </div>
     // <>
     //   <Navbar2 />
