@@ -26,9 +26,7 @@ function App() {
   return (
 
     <>
-    {/* <Hello/> */}
-    {/* <Welcome/> */}
-    {/* <Greet/> */}
+  
       {/* <Navbar />
     <Routes>
       <Route path="/" element={<GetData/>}></Route>
@@ -38,8 +36,7 @@ function App() {
     </Routes > */}
 
       <div className="App">
-        {/* <FirstReducer /><hr></hr>
-        <SecondReducer /> */}
+      
         <Datafetch />
 
       </div>
