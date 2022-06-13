@@ -1,5 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
+import FocusInput from './Componants/UseRef/FocusInput';
 // import './index.css'
 // Routing
 //import { Routes, Route } from 'react-router-dom';
@@ -8,7 +9,7 @@ import './App.css';
 // import Counter from './Componants/UseReduce/Counter';
 // import Counter2 from './Componants/UseReduce/Counter2';
 // import Form from './Componants/UseReduce/Form';
-import GetData from './Componants/UseReduce/GetData';
+//import GetData from './Componants/UseReduce/GetData';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       {/* <Counter2/>
       <Counter/>
       <Form/> */}
-      <GetData/>
+      {/* <GetData/> */}
+      <FocusInput/>
     </div>
     // <>
     //   <Navbar2 />
