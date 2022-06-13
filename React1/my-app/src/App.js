@@ -1,6 +1,7 @@
 //import logo from './logo.svg';
 import './App.css';
-import FocusInput from './Componants/UseRef/FocusInput';
+//import FocusInput from './Componants/UseRef/FocusInput';
+import Signup from './Componants/UseState/Signup';
 // import './index.css'
 // Routing
 //import { Routes, Route } from 'react-router-dom';
@@ -18,7 +19,8 @@ function App() {
       <Counter/>
       <Form/> */}
       {/* <GetData/> */}
-      <FocusInput/>
+      {/* <FocusInput/> */}
+      <Signup/>
     </div>
     // <>
     //   <Navbar2 />
