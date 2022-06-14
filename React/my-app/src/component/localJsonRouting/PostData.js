@@ -17,7 +17,6 @@ const PostData = () => {
 
       .catch((error) => console.log(error));
   }, []);
-  //   const[stud,setstud]=useState([]);
   const postData = () => {
     const val = {
       name,
@@ -25,8 +24,9 @@ const PostData = () => {
     };
 
 
-    if (document.getElementById("name1").value === "" && document.getElementById("branch1").value === "") {
+    if (name==="" && branch==="") {
       alert("Fields are required");
+      count=2;
       
     } else {
       student.forEach((data) => {
@@ -36,7 +36,7 @@ const PostData = () => {
         }
       });
     }
-    if(count!=2){
+    if(count!==2){
       axios
         .post(`http://localhost:3001/student/`, val)
         .then((response) => {

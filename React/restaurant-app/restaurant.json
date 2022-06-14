@@ -1,0 +1,82 @@
+{
+    "Burger":[
+        {
+            "id":1,
+            "title":"Cheez Burger",
+            "type":"Burger",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quod! Magni repudiandae iusto facilis sint iste provident fugiat quia dolores?",
+            "url":"https://images.unsplash.com/photo-1603064752734-4c48eff53d05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnVyZ2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+        },
+        {
+            "id":2,
+            "title":"Chiken Burger",
+            "type":"Burger",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quod! Magni repudiandae iusto facilis sint iste provident fugiat quia dolores?",
+            "url":"https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YnVyZ2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+        },
+        {
+            "id":3,
+            "title":"Biston Burger",
+            "type":"Burger",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quod! Magni repudiandae iusto facilis sint iste provident fugiat quia dolores?",
+            "url":"https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJ1cmdlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+        },
+        {
+            "id":4,
+            "title":"pizza",
+            "type":"Pizza",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quod! Magni repudiandae iusto facilis sint iste provident fugiat quia dolores?",
+            "url":"https://img.freepik.com/free-photo/mixed-pizza-with-various-ingridients_140725-3790.jpg?w=2000"
+        },
+        {
+            "id":5,
+            "title":"pizza",
+            "type":"Pizza",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quod! Magni repudiandae iusto facilis sint iste provident fugiat quia dolores?",
+            "url":"https://img.freepik.com/free-photo/mixed-pizza-with-various-ingridients_140725-3790.jpg?w=2000"
+        },
+        {
+            "id":6,
+            "title":"pizza",
+            "type":"Pizza",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quod! Magni repudiandae iusto facilis sint iste provident fugiat quia dolores?",
+            "url":"https://img.freepik.com/free-photo/mixed-pizza-with-various-ingridients_140725-3790.jpg?w=2000"
+        },
+        {
+            "id":7,
+            "title":"Cheej Phavbhaji",
+            "type":"Phavbhaji",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quod! Magni repudiandae iusto facilis sint iste provident fugiat quia dolores?",
+            "url":"https://img.freepik.com/free-photo/pav-bhaji-is-fast-food-dish-from-india-consisting-thick-vegetable-curry-served-with-soft-bread-roll_466689-74154.jpg?w=2000"
+        },
+        {
+            "id":8,
+            "title":"Spl Phavbhaji",
+            "type":"Phavbhaji",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quod! Magni repudiandae iusto facilis sint iste provident fugiat quia dolores?",
+            "url":"https://thumbs.dreamstime.com/z/pav-bhaji-marathi-cuisine-indian-dish-mix-vegetable-curry-served-buns-also-known-as-usually-eaten-maharashtra-109154966.jpg"
+        },
+        {
+            "id":9,
+            "title":"Ice-Cream",
+            "type":"Dessert",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quod! Magni repudiandae iusto facilis sint iste provident fugiat quia dolores?",
+            "url":"https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVzc2VydHN8ZW58MHx8MHx8&w=1000&q=80"
+        },
+        {
+            "id":10,
+            "title":"Ice-Cream",
+            "type":"Dessert",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quod! Magni repudiandae iusto facilis sint iste provident fugiat quia dolores?",
+            "url":"https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGVzc2VydHN8ZW58MHx8MHx8&w=1000&q=80"
+        },
+        {
+            "id":11,
+            "title":"Soups",
+            "type":"Soups",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quod! Magni repudiandae iusto facilis sint iste provident fugiat quia dolores?",
+            "url":"https://www.eatthis.com/wp-content/uploads/sites/4/2022/01/hot-and-sour-soup.jpg?quality=82&strip=all"
+        }
+
+    ]
+}

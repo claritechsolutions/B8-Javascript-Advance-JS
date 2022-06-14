@@ -36,7 +36,7 @@ const GetData = () => {
                     <td>{value.name}</td>
                     <td>{value.branch}</td>
                     <td><img className='image-fluid w-25 h-25' src={value.url}/></td>
-                    {/* <td><a href={value.url}></a></td> */}
+                    <td><a href={value.url}></a></td>
                   </tr>
                 </>
                 )}

@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "AccountHolderName": "Akash",
+      "BankBalance": 20310,
+      "AccountNumber": 1001
+    },
+    {
+      "id": 2,
+      "AccountHolderName": "Payal",
+      "BankBalance": 23310,
+      "AccountNumber": 1002
+    },
+    {
+      "id": 3,
+      "AccountHolderName": "Dhanashri",
+      "BankBalance": 20310,
+      "AccountNumber": 1003
+    },
+    {
+      "id": 4,
+      "AccountHolderName": "Bhupen",
+      "BankBalance": 20310,
+      "AccountNumber": 1004
+    },
+    {
+      "id": 5,
+      "AccountHolderName": "Pratiksha",
+      "BankBalance": 20310,
+      "AccountNumber": 1005
+    },
+    {
+      "id": 6,
+      "AccountHolderName": "Snehal",
+      "BankBalance": 20310,
+      "AccountNumber": 1006
+    },
+    {
+      "id": 7,
+      "AccountHolderName": "Archana",
+      "BankBalance": 20310,
+      "AccountNumber": 1007
+    },
+    {
+      "id": 8,
+      "AccountHolderName": "Arati",
+      "BankBalance": 20310,
+      "AccountNumber": 1008
+    }
+  ]
+}

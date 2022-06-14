@@ -2,7 +2,7 @@
 
 import "./App.css";
 
-import { Route, Routes } from "react-router-dom";
+// import { Route, Routes } from "react-router-dom";
 // import Navbar from "./component/routerDom/Navbar"
 // import User from "./component/routerDom/user";
 // import Post from "./component/routerDom/posts";
@@ -15,37 +15,43 @@ import { Route, Routes } from "react-router-dom";
 
 //new Project
 
-import NavbarLocal from "./component/localJsonRouting/NavbarLocal";
-import Home from "./component/localJsonRouting/Home";
-import GetData from "./component/localJsonRouting/GetData";
-import PostData from "./component/localJsonRouting/PostData";
-// import PutData from "./component/localJsonRouting/PutData";
-import Delete from "./component/localJsonRouting/Delete";
-import UpdateData from "./component/localJsonRouting/UpdateData";
-// import Darshan from "./component/localJsonRouting/Darshan";
-// import DeleteData  from "./component/localJsonRouting/DeleteData";
+// import NavbarLocal from "./component/localJsonRouting/NavbarLocal";
+// import Home from "./component/localJsonRouting/Home";
+// import GetData from "./component/localJsonRouting/GetData";
+// import PostData from "./component/localJsonRouting/PostData";
+// import Delete from "./component/localJsonRouting/Delete";
+// import UpdateData from "./component/localJsonRouting/UpdateData";
+// import Counter1 from "./component/Reducer/Counter1";
+// import Counter2 from "./component/Reducer/Counter2";
+import Todo from "./component/ToDo/ToDo";
+// import DataFetching from "./component/Reducer/DataFetching"
+// import UseEffect from "./component/HooksUnderstanding/UseEffect";
+//  import Counter from "./component/useMemo/Counter";
 function App() {
   return (
     <div className="App"> 
+    {/* <Counter1/>
 
+    <Counter2/> */}
+    {/* <Counter/> */}
+      <Todo/>
+      {/* <DataFetching/> */}
+      {/* <UseEffect/> */}
       {/* using Routing */}
-      <NavbarLocal />
+      {/* <NavbarLocal /> */}
       {/* <Navbar/> */}
-       <Routes>
-        <Route path="/" element={<Home/>}></Route>
+       {/* <Routes> */}
+        {/* <Route path="/" element={<Home/>}></Route>
         <Route path="/GetData" element={<GetData/>}></Route>
         <Route path="/PostData" element={<PostData/>}></Route> 
-        {/* <Route path="/PutData" element={<PutData/>}></Route> */}
         <Route path="/UpdateData" element={<UpdateData/>}></Route>
-        <Route path="/Delete" element={<Delete/>}></Route>
-        {/* <Route path="/Darshan" element={<Darshan/>}></Route> */}
+        <Route path="/Delete" element={<Delete/>}></Route>  */}
+        {/* <Route path="/Darshan" element={<Darshan/>}></Route>
         
-
-
       {/* <Route path="/" element={<Home />}>Home</Route>
          <Route path="/LocalJson" element={<LocalJson/>}></Route>
         <Route path="/PutData" element={<PutData/>}></Route>  */}
-      </Routes>     
+      {/* </Routes>      */}
     </div>
   );
 }
