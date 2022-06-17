@@ -1,0 +1,76 @@
+{
+    "Menu": [
+      {
+        "id": 1,
+        "title": "Cheese-Egg Burger",
+        "category": "Burger",
+        "price": 250,
+        "img": "https://s7d1.scene7.com/is/image/mcdonalds/t-mcdonalds-Egg-McMuffin-1:product-header-desktop?wid=829&hei=455&dpr=",
+        "desc": "The Cheese-Egg Burger breakfast sandwich is an excellent source of protein and oh so delicious. We place a freshly cracked Grade A egg on a toasted English Muffin topped with real butter and add lean Canadian bacon and melty American cheese. There are 310 calories in a Chese-Egg Burger."
+      },
+      {
+        "id": 2,
+        "title": "Crispy Chicken Burger",
+        "category": "Burger",
+        "price": 300,
+        "img": "https://s7d1.scene7.com/is/image/mcdonalds/t-mcdonalds-spicy-crispy-chicken-sandwich:product-header-desktop?product-header-desktop&wid=829&hei=453&dpr=",
+        "desc": "With our Spicy Pepper Sauce topping the southern style fried chicken fillet on a toasted potato roll, this sandwich was made for those who like it crispy, juicy, tender and hot. The Spicy Crispy Chicken sandwich has 530 calories."
+      },
+      {
+        "id": 3,
+        "title": "Quarter Pounder®* with Cheese Deluxe",
+        "category": "Burger",
+        "price": 450,
+        "img": "https://s7d1.scene7.com/is/image/mcdonalds/t-mcdonalds-qpc-deluxe-burger:product-header-desktop?wid=829&hei=455&dpr=",
+        "desc": "Quarter Pounder® with Cheese Deluxe is a fresh take on a Quarter Pounder® classic burger. Crisp shredded lettuce and three Roma tomato slices top a ¼ lb.* of 100%  fresh beef,layered with two slices of melty American cheese, creamy mayo, fluffy sesame seed hamburger bun. There are 630 calories in a Quarter Pounder with Cheese Deluxe."
+      },
+      {
+        "id": 4,
+        "title": "Pretzel McFlurry",
+        "category": "Dessert",
+        "price": 250,
+        "img": "https://s7d1.scene7.com/is/image/mcdonalds/Header_ChocolatePretzelMcFlurry_v8_832x472:product-header-desktop?wid=830&hei=458&dpr=",
+        "desc": "The regular size Chocolatey Pretzel McFlurry features our creamy vanilla soft serve with caramel topping and chocolatey pretzel pieces blended throughout to satisfy your sweet and salty cravings. There are 670 calories in a regular size Chocolatey Pretzel McFlurry"
+      },
+      {
+        "id": 5,
+        "title": "Hot Fudge Sundae",
+        "category": "Dessert",
+        "price": 300,
+        "img": "https://s7d1.scene7.com/is/image/mcdonalds/t-mcdonalds-Hot-Fudge-Sundae:product-header-desktop?wid=830&hei=456&dpr=",
+        "desc": "Our classic hot fudge sundae is made with creamy vanilla soft serve and smothered in chocolaty hot fudge topping. There are 330 calories in a Hot Fudge Sundae."
+      },
+      {
+        "id": 6,
+        "title": "Hot Caramel Sundae",
+        "category": "Dessert",
+        "price": 350,
+        "img": "https://s7d1.scene7.com/is/image/mcdonalds/t-mcdonalds-Hot-Caramel-Sundae-1:product-header-desktop?wid=830&hei=456&dpr=",
+        "desc": "Treat yourself to a Hot Caramel Sundae at McDonald's! This Caramel Sundae combines creamy vanilla soft serve and warm, buttery caramel topping."
+      },
+      {
+        "id": 7,
+        "title": "Momo Mia Pizza-Veg",
+        "category": "Pizza",
+        "price": 400,
+        "img": "https://gpcdn.ams3.cdn.digitaloceanspaces.com/deals/momo%20mia%20pizza.png",
+        "desc": "Epic combination of signature pan crust, delicious paneer & veg momos topped with spicy Schezwan sauce, onion, capsicum, sweet corn & 100% mozzarella"
+      },
+      {
+        "id": 8,
+        "title": "Tandoori Paneer",
+        "category": "Pizza",
+        "price": 370,
+        "img": "https://www.jaindairy.com/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-29-at-20.05.34-5.jpeg",
+        "desc": "Spiced paneer, Onion, Green Capsicum & Red Paprika in Tandoori Sauce.Spiced paneer, Onion, Green Capsicum & Red Paprika in Tandoori Sauce"
+      },
+      {
+        "id": 9,
+        "title": "Veggie Supreme",
+        "category": "Pizza",
+        "price": 550,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHJIWyZB2BecDlLZJRCz1AYUxw5gqNIK7WGQ&usqp=CAU",
+        "desc": "Black Olives, Green Capsicum, Mushroom, Onion, Red Paprika, Sweet Corn.Black Olives, Green Capsicum, Mushroom, Onion, Red Paprika, Sweet Corn"
+      }
+    ]
+  }
