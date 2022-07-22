@@ -1,0 +1,407 @@
+{
+  "Header": [
+    {
+      "title": "Home",
+      "path": "/",
+      "dropdown": "no"
+    },
+    {
+      "title": "Shop",
+      "path": "/Shop",
+      "dropdown": "no"
+    },
+    {
+      "title": "Featured",
+      "path": "/Featured",
+      "dropdown": "no"
+    },
+    {
+      "title": "Recommended",
+      "path": "/Recommend",
+      "dropdown": "no"
+    },
+    {
+      "title": "Category",
+      "path": "/",
+      "dropdown": "yes",
+      "Menu": [
+        {
+          "id": 1,
+          "name": "women",
+          "path": "/Women"
+        },
+        {
+          "id": 2,
+          "name": "men",
+          "path": "/Men"
+        },
+        {
+          "id": 3,
+          "name": "couple",
+          "path": "/Couple"
+        }
+      ]
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "women",
+      "path": ""
+    },
+    {
+      "id": 2,
+      "name": "men",
+      "path": ""
+    },
+    {
+      "id": 3,
+      "name": "couple",
+      "path": ""
+    }
+  ],
+  "size": [
+    {
+      "id": 1,
+      "name": "32mm"
+    },
+    {
+      "id": 2,
+      "name": "42mm"
+    },
+    {
+      "id": 3,
+      "name": "46mm"
+    }
+  ],
+  "color": [
+    {
+      "id": 1,
+      "name": "red"
+    },
+    {
+      "id": 2,
+      "name": "Black"
+    },
+    {
+      "id": 3,
+      "name": "Pink"
+    },
+    {
+      "id": 4,
+      "name": "Brown"
+    },
+    {
+      "id": 5,
+      "name": "DarkGoldenRod"
+    },
+    {
+      "id": 6,
+      "name": "DarkGrey"
+    },
+    {
+      "id": 7,
+      "name": "ForestGreen"
+    },
+    {
+      "id": 8,
+      "name": "Indigo"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Anne Klein-1",
+      "image": "../images/annewomen/anne-1.jpg",
+      "color": "pink",
+      "price": "7,000/-",
+      "category_id": 1,
+      "color_id": 3,
+      "size_id": 1
+    },
+    {
+      "id": 2,
+      "title": "Anne Klein-2",
+      "image": "../images/annewomen/anne-2.jpg",
+      "color": "Black",
+      "price": "3,000/-",
+      "category_id": 1,
+      "color_id": 2,
+      "size_id": 1
+    },
+    {
+      "id": 3,
+      "title": "Anne Klein-3",
+      "image": "../images/annewomen/anne-7.jpg",
+      "color": "Pink",
+      "price": "4,000/-",
+      "category_id": 1,
+      "color_id": 3,
+      "size_id": 1
+    },
+    {
+      "id": 4,
+      "title": "Anne Klein-6",
+      "image": "../images/boat/Boat1.webp",
+      "color": "Black",
+      "price": "5,000/-",
+      "category_id": 2,
+      "color_id": 2,
+      "size_id": 1
+    },
+    {
+      "id": 5,
+      "title": "Anne Klein-7",
+      "image": "../images/boat/Boat2.webp",
+      "color": "red",
+      "price": "3,000/-",
+      "category_id": 2,
+      "color_id": 1,
+      "size_id": 1
+    },
+    {
+      "id": 6,
+      "title": "Anne Klein-8",
+      "image": "../images/boat/Boat5.webp",
+      "color": "Brown",
+      "price": "12,000/-",
+      "category_id": 1,
+      "color_id": 4,
+      "size_id": 1
+    },
+    {
+      "id": 7,
+      "title": "Anne Klein-11",
+      "image": "../images/couple/couple-1.webp",
+      "color": "DarkGrey",
+      "price": "15,000/-",
+      "category_id": 3,
+      "color_id": 6,
+      "size_id": 1
+    },
+    {
+      "id": 8,
+      "title": "Anne Klein-12",
+      "image": "../images/couple/couple-2.webp",
+      "color": "Black",
+      "price": "20,000/-",
+      "category_id": 3,
+      "color_id": 2,
+      "size_id": 1
+    },
+    {
+      "id": 9,
+      "title": "Anne Klein-13",
+      "image": "../images/couple/couple-3.webp",
+      "color": "DarkGoldenRod",
+      "price": "22,000/-",
+      "category_id": 3,
+      "color_id": 5,
+      "size_id": 1
+    },
+    {
+      "id": 10,
+      "title": "Anne Klein-9",
+      "image": "../images/annewomen/anne-7.jpg",
+      "color": "Pink",
+      "price": "4,000/-",
+      "category_id": 2,
+      "color_id": 3,
+      "size_id": 1
+    },
+    {
+      "id": 11,
+      "title": "OmegaMen-1",
+      "image": "../images/omegamen/omega1.png",
+      "color": "Indigo",
+      "price": "2000/-",
+      "category_id": 2,
+      "color_id": 8,
+      "size_id": 1
+    },
+    {
+      "id": 12,
+      "title": "OmegaMen-2",
+      "image": "../images/omegamen/omega2.png",
+      "color": "Black",
+      "price": "1,000/-",
+      "category_id": 2,
+      "color_id": 2,
+      "size_id": 1
+    },
+    {
+      "id": 13,
+      "title": "OmegaMen-3",
+      "image": "../images/omegamen/omega3.png",
+      "color": "DarkGoldenRod",
+      "price": "4,000/-",
+      "category_id": 2,
+      "color_id": 5,
+      "size_id": 1
+    },
+    {
+      "id": 14,
+      "title": "OmegaMen-4",
+      "image": "../images/omegamen/omega4.png",
+      "color": "DarkGrey",
+      "price": "4,000/-",
+      "category_id": 2,
+      "color_id": 6,
+      "size_id": 1
+    },
+    {
+      "id": 15,
+      "title": "OmegaW-1",
+      "image": "../images/omegawomen/omega2.png",
+      "color": "DarkGrey",
+      "price": "4,000/-",
+      "category_id": 1,
+      "color_id": 6,
+      "size_id": 1
+    },
+    {
+      "id": 16,
+      "title": "OmegaW-2",
+      "image": "../images/omegawomen/omega3.png",
+      "color": "DarkGrey",
+      "price": "4,000/-",
+      "category_id": 1,
+      "color_id": 6,
+      "size_id": 1
+    },
+    {
+      "id": 17,
+      "title": "OmegaW-3",
+      "image": "../images/omegawomen/omega4.png",
+      "color": "Indigo",
+      "price": "1,500/-",
+      "category_id": 1,
+      "color_id": 8,
+      "size_id": 1
+    },
+    {
+      "id": 18,
+      "title": "OmegaW-4",
+      "image": "../images/omegawomen/omega5.png",
+      "color": "Black",
+      "price": "3,000/-",
+      "category_id": 1,
+      "color_id": 2,
+      "size_id": 1
+    },
+    {
+      "id": 19,
+      "title": "OmegaW-5",
+      "image": "../images/omegawomen/omega6.png",
+      "color": "ForestGreen",
+      "price": "4,000/-",
+      "category_id": 1,
+      "color_id": 7,
+      "size_id": 1
+    },
+    {
+      "id": 20,
+      "title": "OmegaW-6",
+      "image": "../images/omegawomen/omega7.png",
+      "color": "DarkGrey",
+      "price": "4,000/-",
+      "category_id": 1,
+      "color_id": 6,
+      "size_id": 1
+    }
+  ],
+  "cart": [
+    {
+      "id": 4,
+      "title": "Anne Klein-6",
+      "image": "../images/boat/Boat1.webp",
+      "color": "Black",
+      "price": "5000",
+      "nquantity": 1,
+      "totalPrice": 5000
+    },
+    {
+      "id": 3,
+      "title": "Anne Klein-3",
+      "image": "../images/annewomen/anne-7.jpg",
+      "color": "Pink",
+      "price": "4000",
+      "nquantity": 1,
+      "totalPrice": 4000
+    },
+    {
+      "id": 2,
+      "title": "Anne Klein-2",
+      "image": "../images/annewomen/anne-2.jpg",
+      "color": "Black",
+      "price": "3000",
+      "nquantity": 1,
+      "totalPrice": 3000
+    },
+    {
+      "id": 1,
+      "title": "Anne Klein-1",
+      "image": "../images/annewomen/anne-1.jpg",
+      "color": "pink",
+      "price": "7000",
+      "nquantity": 1,
+      "totalPrice": 7000
+    },
+    {
+      "id": 7,
+      "title": "Anne Klein-11",
+      "image": "../images/couple/couple-1.webp",
+      "color": "DarkGrey",
+      "price": "15000",
+      "nquantity": 1,
+      "totalPrice": 15000
+    }
+  ],
+  "LoginDetails": [
+    {
+      "fname": "dhanashri",
+      "lname": "mane",
+      "mobileNO": "9527710033",
+      "email": "dmman6@gmail.com",
+      "password": "dhanashri@123",
+      "confirmPassword": "dhanashri@123",
+      "id": 1
+    },
+    {
+      "fname": "Ganesh",
+      "lname": "Londhe",
+      "mobileNO": "8805349972",
+      "email": "ganesh@gmail.com",
+      "password": "ganesh@123",
+      "confirmPassword": "ganesh@123",
+      "id": 2
+    },
+    {
+      "fname": "aarti",
+      "lname": "chitte",
+      "mobileNO": "8978657645",
+      "email": "aartichitte@gmail.com",
+      "password": "Arati@123",
+      "confirmPassword": "Arati@123",
+      "id": 3
+    },
+    {
+      "fname": "payal",
+      "lname": "wasnkar",
+      "mobileNO": "9898978776",
+      "email": "payal98@gmail.com",
+      "password": "payal@123",
+      "confirmPassword": "payal@123",
+      "id": 4
+    },
+    {
+      "fname": "darshan",
+      "lname": "gaikwad",
+      "mobileNO": "9898978676",
+      "email": "darshangaikwad@gmail.com",
+      "password": "darshan@123",
+      "confirmPassword": "darshan@123",
+      "id": 5
+    }
+  ]
+}
