@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+nav {
+  background-color:cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  color: black;
+  font-size: 20px;
+  margin-top: 10px;
+}
+table {
+  border-collapse: collapse;
+  /* width: 100%; */
+  margin-top: 20px;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+thead {
+  background-color: green;
+  color: #f2f2f2;
+  
+}
+input[type=text] ,[type=password],[type=email],[type=number]{
+  width: 80%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.random-class{
+  width: 80%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* .radio{
+  margin-left: 50%
+} */
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  width: 60%;
+  justify-content: center;
+  margin-left: 20%;
+}
+.form-check{
+  margin-left: 10%;
+}
+.form-check-label{
+  margin-right: 80%;
+}
+button{
+  justify-content: center;
+margin-left: 25%;
+}

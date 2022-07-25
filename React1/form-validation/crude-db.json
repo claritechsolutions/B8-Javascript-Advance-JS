@@ -1,0 +1,59 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "firstName": "Pratiksha",
+      "lastName": "Nalawade",
+      "age": 21,
+      "education": "B.tech CS",
+      "designation": "Jr. Software Developer",
+      "email": "pratiksha08@gmail.com",
+      "password": "pratiksha@123",
+      "mobile": "9876543210",
+      "gender": "female",
+      "hobbies": [
+        "Coding",
+        "Movies"
+      ]
+    },
+    {
+      "firstName": "Megha",
+      "lastName": "Kadam",
+      "age": "21",
+      "education": "B.Tech",
+      "designation": "",
+      "email": "megha@gmail.com",
+      "password": "megha@123",
+      "mobile": "9975115704",
+      "gender": "female",
+      "hobbies": [
+        "coding"
+      ],
+      "id": 2
+    },
+    {
+      "firstName": "Mayuri",
+      "lastName": "Palekar",
+      "age": "22",
+      "education": "B.Tech Ele",
+      "designation": "CEO",
+      "email": "mayuri@gmail.com",
+      "password": "mayuri@123",
+      "mobile": "9876543210",
+      "gender": "female",
+      "hobbies": [
+        "movies",
+        "coding",
+        "travelling",
+        "movies",
+        "gaming",
+        "travelling",
+        "coding",
+        "movies",
+        "gaming",
+        "travelling"
+      ],
+      "id": 3
+    }
+  ]
+}
