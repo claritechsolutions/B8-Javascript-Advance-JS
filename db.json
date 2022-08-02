@@ -1,0 +1,110 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "username": "Bretjuijiu",
+      "email": "Sincere@april.biz",
+      "phone": "1-770-736-8031 x56442",
+      "company": "Romaguera-Crona",
+      "website": "hildegard.org",
+      "address": "Kulas Light,Apt. 556",
+      "city": "Gwenborough",
+      "pincode": "92998-3874",
+      "state": "lorem ipsum",
+      "country": "dfggfg",
+      "warehousename": "Narziyala",
+      "description": "lorm ipsum tahuenlorm ipsiunm"
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "username": "Antonette",
+      "email": "Shanna@melissa.tv",
+      "address": "Victor Plains,Suite 879",
+      "city": "Wisokyburgh",
+      "pincode": "90566-7771",
+      "state": "barmuda",
+      "phone": "1-692-6593 x09125",
+      "website": "anastasia.net",
+      "company": "Deckow-Crist",
+      "country": "jigrihgi"
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "username": "Samantha",
+      "email": "Nathan@yesenia.net",
+      "address": "Douglas Extension,Suite 847",
+      "city": "McKenziehaven",
+      "pincode": "59590-4157",
+      "phone": "1-463-123-4447",
+      "website": "ramiro.info",
+      "company": "Romaguera-Jacobson",
+      "state": "sfgdghf",
+      "country": "guytyu"
+    },
+    {
+      "id": 4,
+      "name": "Patricia Lebsack",
+      "username": "Karianne",
+      "email": "Julianne.OConner@kory.org",
+      "address": "Hoeger Mall,Apt. 692",
+      "state": "qerwretr",
+      "city": "South Elvis",
+      "pincode": "53919-4257",
+      "phone": "493-170-9623 x156",
+      "website": "kale.biz",
+      "company": "Robel-Corkery,Multi-tiered productivity",
+      "country": "dfggfg",
+      "gstinnumber": "123654"
+    },
+    {
+      "name": "Jhon Wick",
+      "email": "jhon123@gmail.com",
+      "phone": "9856471345",
+      "address": "blekers street",
+      "city": "New York",
+      "state": "New York",
+      "country": "America",
+      "pincode": "98-785-7899",
+      "id": 5,
+      "company": "Takeshiz pvt ltd",
+      "gstinnumber": "654131"
+    },
+    {
+      "name": "Jatin Rao",
+      "company": "flash Ele",
+      "gstinnumber": "2589630",
+      "email": "jatin@gmail.com",
+      "phone": "7894561302",
+      "address": "North India",
+      "city": "Bhur",
+      "state": "UP",
+      "country": "India",
+      "id": 7,
+      "pincode": "778965"
+    },
+    {
+      "name": "zxcv mnbg",
+      "company": "asdf lkjh",
+      "gstinnumber": "5206304",
+      "email": "zxcv@gmail.com",
+      "phone": "1234567990",
+      "warehousename": "Rakool",
+      "description": "liiuyiurrrrrrrh uyuuywr iihh kkhy byer",
+      "address": "bueuuudnhd",
+      "city": "rakoon",
+      "state": "hhuenh",
+      "country": "Africa",
+      "pincode": "778855",
+      "id": 10
+    },
+    {
+      "warehousename": "Ertis Oppit",
+      "description": "frtggbvg njjhgfrred bydgcrsrd ftrdtrdv waqgloi ",
+      "address": "plmko nujkoo",
+      "id": 11
+    }
+  ]
+} 
