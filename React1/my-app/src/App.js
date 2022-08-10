@@ -1,6 +1,7 @@
 //import logo from './logo.svg';
-import './App.css';
-import Testmemo from './Componants/usememo/Testmemo';
+// import './App.css';
+import ReactHooks from './Componants/AllHooks/ReactHooks';
+// import Testmemo from './Componants/usememo/Testmemo';
 // import './index.css'
 // Routing
 //import { Routes, Route } from 'react-router-dom';
@@ -12,7 +13,8 @@ import Testmemo from './Componants/usememo/Testmemo';
 function App() {
   return (
     <div className="App">
-     <Testmemo/>
+     {/* <Testmemo/> */}
+     <ReactHooks/>
       
     </div>
     // <>
