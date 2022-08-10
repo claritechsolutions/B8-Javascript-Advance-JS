@@ -1,26 +1,34 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchUsers } from '../Redux/User/userSlice';
+import { useNavigate } from 'react-router-dom';
+
+
+
+// import { useDispatch, useSelector } from 'react-redux';
+// import { fetchUsers } from '../Redux/User/userSlice';
 
 const UseList = () => {
 
   const [data, setData] = useState([]);
-  const dispatch = useDispatch();
-  const userData = useSelector(state => state.users.data)
+  const navigate = useNavigate();
+
+  // const dispatch = useDispatch();
+  // const userData = useSelector(state => state.users.data)
+
+
   useEffect(() => {
     loadUserData()
   }, [])
-  useEffect(() => {
-    if (userData.length) {
-      setData(userData);
-    }
-  }, [userData])
-  const loadUserData = () => {
-    dispatch(fetchUsers())
-  }
 
 
+  // useEffect(() => {
+  //   if (userData.length) {
+  //     setData(userData);
+  //   }
+  // }, [userData])
+  // const loadUserData = () => {
+  //   dispatch(fetchUsers())
+  // }
 
   const userDelete = async (data) => {
     let response = await axios.delete(`http://localhost:3001/user/${data.id}`);
@@ -28,14 +36,14 @@ const UseList = () => {
       loadUserData();
     }
   }
-
-
-
-  // const loadUserData = () => {
-  //   axios.get('http://localhost:3001/user')
-  //     .then((response) => setState(response.data))
-  //     .catch((error) => console.error("error", error))
-  // }
+  const loadUserData = () => {
+    axios.get('http://localhost:3001/user')
+      .then((response) => setData(response.data))
+      .catch((error) => console.error("error", error))
+  }
+  const userEdit = (data) => {
+    navigate(`/updateuser/${data.id}`);
+  }
 
 
   return (
@@ -72,7 +80,8 @@ const UseList = () => {
                   <td>{user.designation}</td>
                   <td>{user.hobbies.toString()}</td>
                   <td >
-                    <button type="button" className="btn btn-primary me-2">Edit</button>
+                    {/* <button type="button" className="btn btn-primary me-2">Edit</button> */}
+                    <button type="button" className="btn btn-primary me-2" onClick={() => userEdit(user)}>Edit</button>
                     <button type="button" className="btn btn-danger" onClick={() => userDelete(user)}>Delete</button>
                   </td>
                 </tr>

@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React,{useState,useEffect} from 'react';
 import axios from 'axios'
+import { useNavigate, useParams } from 'react-router-dom';
 
 const initialState = {
     firstName: '',
@@ -16,11 +17,50 @@ const initialState = {
 
 const CreateUser = () => {
     const [formState, setFormState] = useState(initialState);
-    const createUser = () => {
-        axios.post('http://localhost:3001/user', formState)
-            .then((response) => console.log(response))
-            .catch((error) => console.log(error))
+
+    let params = useParams();
+    const navigate = useNavigate();
+    const [editUser, setEditUser] = useState(Object.keys(params).length !== 0 ? true : false)
+    useEffect(() => {
+        if (editUser) {
+            axios.get(`http://localhost:8000/user/${params?.id}`)
+                .then((response) => updateUserFormData(response?.data))
+                .catch((error) => console.log(error));
+        }
+    }, [])
+    const updateUserFormData = (data) => {
+        setFormState({ ...data });
     }
+
+
+    const createUser = () => {
+        if (editUser) {
+            axios.put(`http://localhost:3001/user/${params?.id}`, formState)
+              .then((response) => {
+                let newState = { ...initialState };
+                newState.hobbies = [];
+                setFormState(newState);
+                navigate('/');
+              })
+              .catch((error) => console.log(error))
+          } else {
+            axios.post('http://localhost:3001/user', formState)
+              .then((response) => {
+                let newState = { ...initialState };
+                newState.hobbies = [];
+                setFormState(newState);
+              })
+              .catch((error) => console.log(error))
+          }
+
+
+
+        // axios.post('http://localhost:3001/user', formState)
+        //     .then((response) => console.log(response))
+        //     .catch((error) => console.log(error))
+    }
+
+
     const formValueChange = (event, fieldType) => {
         let newState = { ...formState };
         switch (fieldType) {
@@ -106,8 +146,10 @@ const CreateUser = () => {
 
     return (
         <div>
+
             <form>
-                <h3 className="mt-3 text-primary"> Fill Your Information</h3>
+                <h3 className="mt-3 text-primary">{!editUser ? 'Create' : 'Update'} Users</h3>
+                {/* <h3 className="mt-3 text-primary"> Fill Your Information</h3> */}
                 <div className="form-group row my-2">
                     <label className="col-sm-2 col-form-label"><b>First Name</b></label>
                     <div className="col-sm-10">
@@ -211,7 +253,8 @@ const CreateUser = () => {
                 </div>
                 <div className="form-group row my-2">
                     <div className="col-sm-10">
-                        <button type="submit" className="btn btn-primary " onClick={() => createUser()}>Create User</button>
+                        <button type="submit" className="btn btn-primary" onClick={() => createUser()}>{!editUser ? 'Create' : 'Update'}User</button>
+                        {/* <button type="submit" className="btn btn-primary " onClick={() => createUser()}>Create User</button> */}
                     </div>
                 </div>
             </form>
@@ -219,6 +262,7 @@ const CreateUser = () => {
 
     )
 }
+
 
 
 

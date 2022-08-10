@@ -13,6 +13,7 @@ function App() {
           <Routes>
             <Route path="/" element={<UseList />}/>
             <Route path="/createUser" element={<CreateUser />}/>
+            <Route path="/updateuser/:id" element={<CreateUser />} />
           </Routes>
           {/* <div className="col-12">
             <h3>CRUD APPLICATION</h3>

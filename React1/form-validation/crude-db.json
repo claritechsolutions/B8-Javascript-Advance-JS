@@ -1,22 +1,6 @@
 {
   "user": [
     {
-      "id": 1,
-      "firstName": "Pratiksha",
-      "lastName": "Nalawade",
-      "age": 21,
-      "education": "B.tech CS",
-      "designation": "Jr. Software Developer",
-      "email": "pratiksha08@gmail.com",
-      "password": "pratiksha@123",
-      "mobile": "9876543210",
-      "gender": "female",
-      "hobbies": [
-        "Coding",
-        "Movies"
-      ]
-    },
-    {
       "firstName": "Megha",
       "lastName": "Kadam",
       "age": "21",
@@ -32,28 +16,35 @@
       "id": 2
     },
     {
-      "firstName": "Mayuri",
-      "lastName": "Palekar",
-      "age": "22",
-      "education": "B.Tech Ele",
-      "designation": "CEO",
-      "email": "mayuri@gmail.com",
-      "password": "mayuri@123",
-      "mobile": "9876543210",
+      "firstName": "Shivani",
+      "lastName": "mane",
+      "age": "21",
+      "education": "B.Tech Entc",
+      "designation": "",
+      "email": "abc@gmail.com",
+      "password": "abc@123",
+      "mobile": "2324252627",
       "gender": "female",
       "hobbies": [
-        "movies",
         "coding",
-        "travelling",
-        "movies",
-        "gaming",
-        "travelling",
-        "coding",
-        "movies",
-        "gaming",
-        "travelling"
+        "movies"
       ],
       "id": 3
+    },
+    {
+      "firstName": "Anajali ",
+      "lastName": " Nalawade",
+      "age": "24",
+      "education": "CMA",
+      "designation": "Manager",
+      "email": "anjali@gmail.com",
+      "password": "anjali@123",
+      "mobile": "6758493012",
+      "gender": "female",
+      "hobbies": [
+        "gaming"
+      ],
+      "id": 4
     }
   ]
 }
