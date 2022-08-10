@@ -1,0 +1,145 @@
+{
+  "product": [
+    {
+      "name": "inconvenience goods",
+      "description": "not so much useful",
+      "id": 1
+    },
+    {
+      "name": "Coveninence goods",
+      "description": "lorem epsim lorem epsim",
+      "id": 2
+    }
+  ],
+  "customer": [
+    {
+      "name": "Pratiksha Shrimant Nalawade",
+      "email": "pratikshanalawade2000@gmail.com",
+      "phone": "2345678903",
+      "address": "AP Nawadi Tal Patan Dist Satara",
+      "city": "Satara",
+      "state": "India",
+      "zip": "415209",
+      "id": 1
+    },
+    {
+      "name": "Mayuri Palekar",
+      "email": "maturi@gmail.com",
+      "phone": "9876543207",
+      "address": "at garavde",
+      "city": "satara",
+      "state": "MAH",
+      "zip": "415209",
+      "id": 2
+    },
+    {
+      "name": "Sayali Pawar",
+      "email": "sayali@gmailcom",
+      "phone": "34567890",
+      "address": "Aakurdi",
+      "city": "pune",
+      "state": "MAH",
+      "zip": "456789",
+      "id": 3
+    }
+  ],
+  "supplier": [
+    {
+      "name": "Pratiksha Nalawade",
+      "company": "claritech LLP pune",
+      "gstinnumber": "ABC123",
+      "email": "pratikshanalawade2000@gmail.com",
+      "phone": "767889564312",
+      "address": "AP Nawadi",
+      "city": "Satara",
+      "state": "MAH",
+      "country": "India",
+      "id": 1
+    },
+    {
+      "name": "jon Doe",
+      "company": "wipro",
+      "gstinnumber": "PAN123",
+      "email": "abc@gmail.com",
+      "phone": "12345678",
+      "address": "pune",
+      "city": "PuneCity",
+      "state": "MAH",
+      "country": "India",
+      "zip": "415209",
+      "id": 2
+    },
+    {
+      "name": "Tushar Jadhav",
+      "company": "ERT67",
+      "gstinnumber": "",
+      "email": "tushar@890",
+      "phone": "90807060",
+      "address": "Swarget",
+      "city": "Pune",
+      "state": "India",
+      "country": "",
+      "id": 3
+    },
+    {
+      "name": "Kunal Bhosale",
+      "company": "syaji park",
+      "gstinnumber": "AWR456",
+      "email": "kunal@gmail.com",
+      "phone": "5677890234",
+      "address": "Bhuinj",
+      "city": "Satara",
+      "state": "MAH",
+      "country": "India",
+      "id": 4
+    }
+  ],
+  "warehouse": [
+    {
+      "name": "Mayuri Palekar",
+      "description": "i'm intersted in this project",
+      "address": "at garavde",
+      "id": 1
+    },
+    {
+      "name": "Pratiksha  Nalawade",
+      "description": "I'm interested in this product",
+      "address": "AP Nawadi Tal Patan Dist Satara",
+      "id": 2
+    },
+    {
+      "name": "Aanjali Nalawade",
+      "description": "This product is very useful",
+      "address": "Kalmboli",
+      "id": 3
+    }
+  ],
+  "promocode": [
+    {
+      "code": "10OFF",
+      "amount": "200",
+      "qty": "4",
+      "validdate": "2022-07-03",
+      "id": 1
+    },
+    {
+      "code": "50OFF",
+      "amount": "1000",
+      "qty": "3",
+      "validdate": "2022-10-08",
+      "id": 2
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "owner": "Jethalal Gada",
+      "sales": "Electronics"
+    },
+    {
+      "owner": "Ana Doe",
+      "sales": "Ferniture",
+      "id": 2
+    }
+  ]
+}

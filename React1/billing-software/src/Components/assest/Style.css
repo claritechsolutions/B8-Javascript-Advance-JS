@@ -1,0 +1,67 @@
+.home,
+.customer,
+.supplier 
+{
+  display: flex;
+  /* height: 90vh; */
+  align-items: center;
+  justify-content: center;
+  /* font-size: 3rem; */
+}
+.table{
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  /* margin-left: 255px; */
+}
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+thead {
+  background-color: green;
+  color: #f2f2f2;
+}
+/* form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  width: 50%;
+  justify-content: center;
+  margin-left: 10%;
+} */
+form {
+    background-color: rgba(0,0,0,0.5);
+    width: 50%;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(255,255,255,0.3);
+    margin-left: 10%;
+    justify-content: center;
+
+}
+.random-class{
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.226);
+  border: 1px solid rgb(255,255,255,0.3);
+  width: 50%;
+  justify-content: center;
+  margin-left: 25%;
+  font-size: 20px;
+  
+}
+/* button{
+  justify-content: center;
+margin-left: 25%;
+} */
+/* .bg-img {
+    
+        background-image: url('./billing3.jpg');
+        background-repeat: 'no-repeat';
+       background-size: 'cover';
+       width: 100%;
+       
+}
+ */
